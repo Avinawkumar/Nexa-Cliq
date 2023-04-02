@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEXA CLIQ</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="icon.jpg" type="image/jpg" />
+    <link rel="stylesheet" href="CSS/prodPage.css" />
+  </head>
+  <body>
+
+
+    
+    <!-- --------- Nav Bar starts ------------------->
+    <nav class="header">
+      <div class="logo">
+        <img src="images/NEXA (3).png" alt="">
+      </div>
+
+      <!-- responsive nav -->
+      <div class="mob-nav">
+        <div>Women's Fashion</div>
+        <div>Mans Fashion</div>
+        <div>Kid's Fashion</div>
+        <div>Electronics</div>
+        <div class="mob-sign" onclick="ope()">Sign In / SignUp</div>
+      </div>
+      <!-- responsive nav -->
+
+      <div class="nav-right">
+        <div class="up-nav">
+          <div class="tata-luxury-page">
+            <a href="">Nexa CLiQ Luxury</a>
+          </div>
+          <!--login and track tabs-->
+          <div class="login-and-tracktab">
+            <div class="tata-luxury-page">
+              <a href="">CLiQ Cash</a>
+            </div>
+            <div class="tata-luxury-page" onclick="ope()">
+              <a href="#">Gift Card</a>
+            </div>
+            <div class="tata-luxury-page" onclick="ope()">
+              <a href="#">CLiQ Care</a>
+            </div>
+            <div class="tata-luxury-page" onclick="ope()">
+              <a href="#">Track Orders</a>
+            </div>
+            <div class="tata-luxury-page sig" onclick="ope()" style="height: 40px;cursor: pointer;">
+              
+              <a href="#" id="sign">Sign in / Sign Up</a>
+            </div>
+            <div class="accounts">
+              <div class="profile-logo">
+                  <div>
+                  <img src="cart/images/profile.39b59dc38fd3.png" alt="" style="width: 25px;height: 25px;">
+                  </div>
+                  <p class="UserName"></p>
+                  <img src="cart/images/down-arrow-white.7d24202a27ce.svg" alt="">
+              </div>
+          </div>
+          </div>
+        </div>
+        <div class="down-nav">
+          <div class="dropdowns">
+            <div class="category"  onmouseover="show()" onmouseout="hide()">Categories
+              <div class="img"></div>
+              <div class="category-expand">
+                <div class="sub-category">
+                    <div class="sub-category-value black" onmouseover="show(0)" onmouseout="hide(0)" >Women's Fashion
+                        <div class="arrow arrow-icon"></div>
+                    </div>
+                    <div class="sub-category-value" onmouseover="show(1)" onmouseout="hide(1)" >Men's Fashion
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="sub-category-value" onmouseover="show(2)" onmouseout="hide(2)" >TV & Appliances
+                        <div class="arrow "></div>
+                    </div>
+                    <div class="sub-category-value" onmouseover="show(3)" onmouseout="hide(3)" >Mobile phones
+                        <div class="arrow "></div>
+                    </div>
+                    <div class="sub-category-value" onmouseover="show(4)" onmouseout="hide(4)" >Electronics
+                        <div class="arrow "></div>
+                    </div>
+                    <div class="sub-category-value" onmouseover="show(5)" onmouseout="hide(5)" >Kid's Fashion
+                        <div class="arrow "></div>
+                    </div>
+                    <div class="sub-category-value" onmouseover="show(6)" onmouseout="hide(6)" >Beauty
+                        <div class="arrow "></div>
+                    </div>
+                    <div class="sub-category-value" onmouseover="show(7)" onmouseout="hide(7)" >Home Furnishings
+                        <div class="arrow "></div>
+                    </div>
+                </div>
+                <!--  sub category sub values   -->
+                <div class="sub-category-option ">
+                  <section class="show">
+                    <div class="sub-category-option-header" onclick="location.href='#'" >Ethnic Wear</div>
+                    <div class="sub-category-option-value">Kurtas & Kurtis</div>
+                    <div class="sub-category-option-value">Suits Sets</div>
+                    <div class="sub-category-option-value">Sarees</div>
+                    <div class="sub-category-option-value">Lehenga Sets</div>
+                    <div class="sub-category-option-value">Bottom</div>
+                    <div class="sub-category-option-value">Dupattas</div>
+                    <div class="sub-category-option-value">Blouse & Dress</div>
+                    <div class="sub-category-option-header">Inner & Nightwear</div>
+                    <div class="sub-category-option-value">Camisole</div>
+                    <div class="sub-category-option-value">Sleeping & Robes</div>
+                    <div class="sub-category-option-value">Shapewear</div>
+                    <div class="sub-category-option-value">Custom clothes</div>
+                    <div class="sub-category-option-header">Fragrances</div>
+                    <div class="sub-category-option-header">Active & Sportswear</div>
+                    <div class="sub-category-option-header">Western Wear</div>
+                    <div class="sub-category-option-value">Top & Tees</div>
+                    <div class="sub-category-option-value">Dress</div>
+                    <div class="sub-category-option-value">Shirts</div>
+                    <div class="sub-category-option-value">Pant & Trousers</div>
+                    <div class="sub-category-option-value">Jeans</div>
+                    <div class="sub-category-option-value">Leggings</div>
+                    <div class="sub-category-option-value">Jumpsuits</div>
+                    <div class="sub-category-option-value">Skirts</div>
+                    <div class="sub-category-option-value">Jacket & Blazers</div>
+                    <div class="sub-category-option-value">shrugs</div>
+                    <div class="sub-category-option-value">Sweatshirts</div>
+                    <div class="sub-category-option-value">Sweaters</div>
+                    <div class="sub-category-option-header">Curvy Fasshion</div>
+                    <div class="sub-category-option-header">View All Clothing</div>
+                    <div class="sub-category-option-header">Footwear</div>
+                    <div class="sub-category-option-value">Casual</div>
+                    <div class="sub-category-option-value">Ethnic</div>
+                    <div class="sub-category-option-value">Formal</div>
+                    <div class="sub-category-option-value">Sneakers</div>
+                    <div class="sub-category-option-value">Boots</div>
+                    <div class="sub-category-option-value">Sports Shoes</div>
+                    <div class="sub-category-option-value">Flip Flops</div>
+                    <div class="sub-category-option-header">Watches</div>
+                    <div class="sub-category-option-value">Dressy Watches</div>
+                    <div class="sub-category-option-value">casual Watches</div>
+                    <div class="sub-category-option-value">Smart Watches</div>
+                    <div class="sub-category-option-value">Formal Watches</div>
+                    <div class="sub-category-option-value">Sports Watches</div>
+                    <div class="sub-category-option-header">Handbags & Wallets</div>
+                    <div class="sub-category-option-value">Handbags</div>
+                    <div class="sub-category-option-value">Tote Bags</div>
+                    <div class="sub-category-option-value">Sling Bags</div>
+                    <div class="sub-category-option-value">Laptop Bags</div>
+                    <div class="sub-category-option-value">Backpacks</div>
+                    <div class="sub-category-option-value">Wallet</div>
+                    <div class="sub-category-option-value">Clutches</div>
+                    <div class="sub-category-option-value">Leather Bags</div>
+                    <div class="sub-category-option-header">Jewellery</div>
+                    <div class="sub-category-option-value">Gold Jewellery</div>
+                    <div class="sub-category-option-value">Daimond Jewellery</div>
+                    <div class="sub-category-option-value">Silver Jewellery</div>
+                    <div class="sub-category-option-value">Fashion Jewellery</div>
+                    <div class="sub-category-option-header">Eyewear</div>
+                    <div class="sub-category-option-header">Frames</div>
+                    <!-- <div class="sub-category-option-value">wd</div> -->
+                  </section>
+                  <section>
+                    <div class="sub-category-option-header">Footwear</div>
+                    <div class="sub-category-option-value" onclick="location.href='prodPage.html'">Casual Shoes</div>
+                    <div class="sub-category-option-value" onclick="location.href='prodPage.html'">Sneakers</div>
+                    <div class="sub-category-option-value" onclick="location.href='prodPage.html'">Formal Shoes</div>
+                    <div class="sub-category-option-value">Training Shoes</div>
+                    <div class="sub-category-option-value">Running Shoes</div>
+                    <div class="sub-category-option-value">Sports Shoes</div>
+                    <div class="sub-category-option-value">Flip Flops</div>
+                    <div class="sub-category-option-value">Boots</div>
+                    <div class="sub-category-option-header">Sports Wear</div>
+                    <div class="sub-category-option-value">T-shirts & Jersys</div>
+                    <div class="sub-category-option-value">Shorts</div>
+                    <div class="sub-category-option-value">Sports jackets</div>
+                    <div class="sub-category-option-value">Gym Gear</div>
+                    <div class="sub-category-option-value">Joggers</div>
+                    <div class="sub-category-option-header">Ethnic Wear</div>
+                    <div class="sub-category-option-header">Clothing</div>
+                    <div class="sub-category-option-value">T-shirts & Polos</div>
+                    <div class="sub-category-option-value">Casual Shirts</div>
+                    <div class="sub-category-option-value">Jeans</div>
+                    <div class="sub-category-option-value">Trousers</div>
+                    <div class="sub-category-option-value">Shorts</div>
+                    <div class="sub-category-option-value">Casual Jackets</div>
+                    <div class="sub-category-option-value">Winter Wear</div>
+                    <div class="sub-category-option-value">Formal Shirts</div>
+                    <div class="sub-category-option-value">Formal Trouser</div>
+                    <div class="sub-category-option-value">Innerwear</div>
+                    <div class="sub-category-option-value">Sleepwear</div>
+                    <div class="sub-category-option-value">Formal Blazer</div>
+                    <div class="sub-category-option-header">View All Clothing</div>
+                    <div class="sub-category-option-header">Watches</div>
+                    <div class="sub-category-option-value">Workwear Watches</div>
+                    <div class="sub-category-option-value">casual Watches</div>
+                    <div class="sub-category-option-value">Smart Watches</div>
+                    <div class="sub-category-option-value">Formal Watches</div>
+                    <div class="sub-category-option-value">Sports Watches</div>
+                    <div class="sub-category-option-value">Digital Watches</div>
+                    <div class="sub-category-option-value">Partywear Watches</div>
+                    <div class="sub-category-option-header">The Watch Store</div>
+                    <div class="sub-category-option-header">Bags & Backpacks</div>
+                    <div class="sub-category-option-value">Backpacks</div>
+                    <div class="sub-category-option-value">Wallets</div>
+                    <div class="sub-category-option-value">Metalic Wallets</div>
+                    <div class="sub-category-option-value">Messenger Bags</div>
+                    <div class="sub-category-option-value">Cross Body bags</div>
+                    <div class="sub-category-option-header">Luggage & Trolleys</div>
+                    <div class="sub-category-option-value">Trolly & Suitcase</div>
+                    <div class="sub-category-option-value">Duffle Bags</div>
+                    <div class="sub-category-option-value">Rucksack & Trekking</div>
+                    <div class="sub-category-option-value">Backpacks</div>
+                    <div class="sub-category-option-header">Fashion Accessories</div>
+                    <div class="sub-category-option-value">Belts</div>
+                    <div class="sub-category-option-value">Hats & Caps</div>
+                    <div class="sub-category-option-value">Ties & Cuffinks</div>
+                    <!-- <div class="sub-category-option-value">Men's Gift Sets</div> -->
+                    <div class="sub-category-option-header">Jewellery</div>
+                    <div class="sub-category-option-value">Men's Jewellery</div>
+                    <div class="sub-category-option-value">Coins And Bars</div>
+                    <div class="sub-category-option-header">Eyewear</div>
+                    <div class="sub-category-option-value">Sunglasses</div>
+                    <div class="sub-category-option-value">Aviators</div>
+                  </section>
+                  <section>
+                    <div class="sub-category-option-header">Summer Appliances Deals</div>
+                    <div class="sub-category-option-header">AC Store</div>
+                    <div class="sub-category-option-value">Air Conditioners</div>
+                    <div class="sub-category-option-value">Split ACs</div>
+                    <div class="sub-category-option-value">Inverter ACs</div>
+                    <div class="sub-category-option-value">Adjustable ACs</div>
+                    <div class="sub-category-option-value">Window ACs</div>
+                    <div class="sub-category-option-value">Stabilizers</div>
+                    <div class="sub-category-option-header">Televisions</div>
+                    <div class="sub-category-option-value">Smart TVs</div>
+                    <div class="sub-category-option-value">4K Ultra HD TVs</div>
+                    <div class="sub-category-option-value">Android TVs</div>
+                    <div class="sub-category-option-value">OLED &amp; QLED TVs</div>
+                    <div class="sub-category-option-value">Bestselling TVs</div>
+                    <div class="sub-category-option-header">Audio Store</div>
+                    <div class="sub-category-option-value">Soundbars</div>
+                    <div class="sub-category-option-value">Home Theatres</div>
+                    <div class="sub-category-option-value">Party Speakers</div>
+                    <div class="sub-category-option-header">Refrigerator Store</div>
+                    <div class="sub-category-option-value">Refrigerators</div>
+                    <div class="sub-category-option-value">Single Door</div>
+                    <div class="sub-category-option-value">Double Door</div>
+                    <div class="sub-category-option-value">Side-by-Side</div>
+                    <div class="sub-category-option-value">Convertible</div>
+                    <div class="sub-category-option-value">Bottom Mount</div>
+                    <div class="sub-category-option-header">Washing Machines</div>
+                    <div class="sub-category-option-value">Automatic Front Load</div>
+                    <div class="sub-category-option-value">Automatic Top Load</div>
+                    <div class="sub-category-option-value">Semi Automatic</div>
+                    <div class="sub-category-option-value">Washers &amp; Dryers</div>
+                    <div class="sub-category-option-value">Dishwashers</div>
+                    <div class="sub-category-option-header">Kitchen Appliances Store</div>
+                    <div class="sub-category-option-value">Kitchen Appliances</div>
+                    <div class="sub-category-option-value">Microwave Ovens</div>
+                    <div class="sub-category-option-value">Mixers &amp; Grinders</div>
+                    <div class="sub-category-option-value">Blenders &amp; Juicers</div>
+                    <div class="sub-category-option-value">Cooktops</div>
+                    <div class="sub-category-option-value">Air Fryers</div>
+                    <div class="sub-category-option-value">Kettles &amp; Coffee Makers</div>
+                    <div class="sub-category-option-value">Toasters</div>
+                    <div class="sub-category-option-value">Electric Cookers</div>
+                    <div class="sub-category-option-value">Food &amp; Roti Makers</div>
+                    <div class="sub-category-option-header">Small Home Appliances</div>
+                    <div class="sub-category-option-value">Air Coolers</div>
+                    <div class="sub-category-option-value">Fans</div>
+                    <div class="sub-category-option-value">Water Purifiers</div>
+                    <div class="sub-category-option-value">Air Purifiers</div>
+                    <div class="sub-category-option-value">Vacuum Cleaners</div>
+                    <div class="sub-category-option-value">Irons</div>
+                    <div class="sub-category-option-value">Water Heaters</div>
+                    <div class="sub-category-option-header">Connected Homes</div>
+                    <div class="sub-category-option-value">Smart Lighting &amp; Plugs</div>
+                    <div class="sub-category-option-value">Smart Assistants &amp; Audio</div>
+                    <div class="sub-category-option-header">AC Buying Guide</div>
+                    <div class="sub-category-option-header">TV Buying Guide</div>
+                    <div class="sub-category-option-value">Refrigerator Buying</div>
+                    <div class="sub-category-option-value">Extended Warranty</div>
+                    <div class="sub-category-option-value">Smartphones</div>
+                    <div class="sub-category-option-value">Laptops</div>
+                    <div class="sub-category-option-header">Tech Accessories</div>
+
+                  </section>
+                  <section>                
+                    <div class="sub-category-option-header">Electronics Deals</div>
+                    <div class="sub-category-option-header">Mobile Phones Store</div>
+                    <div class="sub-category-option-value">Mobile Phones</div>
+                    <div class="sub-category-option-value">iPhone</div>
+                    <div class="sub-category-option-value">New Launches</div>
+                    <div class="sub-category-option-value">Flagship Phones</div>
+                    <div class="sub-category-option-value">Feature Phones</div>
+                    <div class="sub-category-option-header">Shop by Brand</div>
+                    <div class="sub-category-option-value">Apple</div>
+                    <div class="sub-category-option-value">Samsung</div>
+                    <div class="sub-category-option-value">Vivo</div>
+                    <div class="sub-category-option-value">Oppo</div>
+                    <div class="sub-category-option-value">Realme</div>
+                    <div class="sub-category-option-value">Nokia</div>
+                    <div class="sub-category-option-value">Xiaomi</div>
+                    <div class="sub-category-option-value">OnePlus</div>
+                    <div class="sub-category-option-header">Shop by Feature</div>
+                    <div class="sub-category-option-value">5G Phones</div>
+                    <div class="sub-category-option-value">Gaming Phones</div>
+                    <div class="sub-category-option-value">Selfie Phones</div>
+                    <div class="sub-category-option-value">Long Battery Life</div>
+                    <div class="sub-category-option-header">Shop by Price</div>
+                    <div class="sub-category-option-value">Under Rs. 10,000</div>
+                    <div class="sub-category-option-value">From 10,001 to 20,000</div>
+                    <div class="sub-category-option-value">From 20,001 to 30,000</div>
+                    <div class="sub-category-option-value">From 30,001 to 50,000</div>
+                    <div class="sub-category-option-value">Above 50,000</div>
+                    <div class="sub-category-option-header">Accessories Store</div>
+                    <div class="sub-category-option-value">Cases &amp; Covers</div>
+                    <div class="sub-category-option-value">Screen Protectors</div>
+                    <div class="sub-category-option-value">Chargers</div>
+                    <div class="sub-category-option-value">Cables</div>
+                    <div class="sub-category-option-value">Power Banks</div>
+                    <div class="sub-category-option-value">Memory Cards</div>
+                    <div class="sub-category-option-value">Mobile Holders</div>
+                    <div class="sub-category-option-value">Apple Accessories</div>
+                    <div class="sub-category-option-header">Audio Store</div>
+                    <div class="sub-category-option-value">Earphones</div>
+                    <div class="sub-category-option-value">Headsets</div>
+                    <div class="sub-category-option-value">True Wireless</div>
+                    <div class="sub-category-option-value">Neckbands</div>
+                    <div class="sub-category-option-value">Bluetooth Speakers</div>
+                    <div class="sub-category-option-header">Wearables Store</div>
+                    <div class="sub-category-option-value">Smart Watches</div>
+                    <div class="sub-category-option-value">Apple Watch</div>
+                    <div class="sub-category-option-value">Fitness Trackers</div>
+                    <div class="sub-category-option-header">Value-Added Services</div>
+                    <div class="sub-category-option-value">Extended Warranty</div>
+                    <div class="sub-category-option-value">Exchange Offers</div>
+                    <div class="sub-category-option-header">View Other Categories</div>
+                    <div class="sub-category-option-value">Appliances</div>
+                    <div class="sub-category-option-value">Televisions</div>
+                    <div class="sub-category-option-value">Laptops</div>
+                  </section>
+                  <section>
+                    
+                    <div class="sub-category-option-header">Electronics Deals</div>
+                    <div class="sub-category-option-header">Laptop Store</div>
+                    <div class="sub-category-option-value">Laptops</div>
+                    <div class="sub-category-option-value">i3 Laptops</div>
+                    <div class="sub-category-option-value">i5 Laptops</div>
+                    <div class="sub-category-option-value">i7 Laptops</div>
+                    <div class="sub-category-option-value">AMD Laptops</div>
+                    <div class="sub-category-option-value">MacBook</div>
+                    <div class="sub-category-option-value">Gaming Laptops</div>
+                    <div class="sub-category-option-header">Tablets &amp; iPad</div>
+                    <div class="sub-category-option-header">Storage Devices Store</div>
+                    <div class="sub-category-option-value">Storage Devices</div>
+                    <div class="sub-category-option-value">Hard Drives</div>
+                    <div class="sub-category-option-value">SSDs</div>
+                    <div class="sub-category-option-value">Pen Drives</div>
+                    <div class="sub-category-option-header">IT Accessories</div>
+                    <div class="sub-category-option-value">Printer Store</div>
+                    <div class="sub-category-option-value">Printers</div>
+                    <div class="sub-category-option-value">Cartridges &amp; Toners</div>
+                    <div class="sub-category-option-value">PC Components</div>
+                    <div class="sub-category-option-value">Keyboards &amp; Mouse</div>
+                    <div class="sub-category-option-value">Routers &amp; Modems</div>
+                    <div class="sub-category-option-value">Monitors</div>
+                    <div class="sub-category-option-value">Desktops</div>
+                    <div class="sub-category-option-value">Peripherals &amp; Software</div>
+                    <div class="sub-category-option-value">Laptop Bags</div>
+                    <div class="sub-category-option-header">Photography Store</div>
+                    <div class="sub-category-option-value">Camera &amp; Accessories</div>
+                    <div class="sub-category-option-value">DSLRs</div>
+                    <div class="sub-category-option-value">Camera Lenses</div>
+                    <div class="sub-category-option-value">Action Camcorders</div>
+                    <div class="sub-category-option-value">Point &amp; Shoot</div>
+                    <div class="sub-category-option-value">Instant Cameras</div>
+                    <div class="sub-category-option-value">Security Cameras</div>
+                    <div class="sub-category-option-value">Tripods</div>
+                    <div class="sub-category-option-value">Camera Accessories</div>
+                    <div class="sub-category-option-header">Gaming</div>
+                    <div class="sub-category-option-header">Audio Store</div>
+                    <div class="sub-category-option-value">Earphones</div>
+                    <div class="sub-category-option-value">Headsets</div>
+                    <div class="sub-category-option-value">Bluetooth Speakers</div>
+                    <div class="sub-category-option-value">Home Audio</div>
+                    <div class="sub-category-option-header">Wearables Store</div>
+                    <div class="sub-category-option-value">Smart Watches</div>
+                    <div class="sub-category-option-value">Apple Watch</div>
+                    <div class="sub-category-option-header">Personal Care Store</div>
+                    <div class="sub-category-option-value">Personal Care</div>
+                    <div class="sub-category-option-value">Trimmers &amp; Shavers</div>
+                    <div class="sub-category-option-value">Hair Dryers</div>
+                    <div class="sub-category-option-value">Hair Straighteners</div>
+                    <div class="sub-category-option-value">Epilators</div>
+                    <div class="sub-category-option-header">Health Care</div>
+                    <div class="sub-category-option-value">Weighing Scales</div>
+                    <div class="sub-category-option-value">Massagers</div>
+                    <div class="sub-category-option-header">Smart Home Devices</div>
+                    <div class="sub-category-option-header">Extended Warranty</div>
+                    <div class="sub-category-option-header">View Other</div>
+                    <div class="sub-category-option-value">Mobile Phones</div>
+                    <div class="sub-category-option-value">Appliances</div>
+                    <div class="sub-category-option-value">Televisions</div>
+
+                  </section>
+                  <section>
+                    
+                    <div class="sub-category-option-header">Boys Clothing</div>
+                    <div class="sub-category-option-value">T shirts and Polos</div>
+                    <div class="sub-category-option-value">Shirts</div>
+                    <div class="sub-category-option-value">Jeans And Trousers</div>
+                    <div class="sub-category-option-value">Shorts And Dungarees</div>
+                    <div class="sub-category-option-value">Sportswear</div>
+                    <div class="sub-category-option-value">Ethnic Wear</div>
+                    <div class="sub-category-option-value">Inner Wear</div>
+                    <div class="sub-category-option-value">Night wear</div>
+                    <div class="sub-category-option-value">Winter Wear</div>
+                    <div class="sub-category-option-value">Party wear</div>
+                    <div class="sub-category-option-header">Shop By Age</div>
+                    <div class="sub-category-option-value">2 - 6 Years</div>
+                    <div class="sub-category-option-value">6 - 12 Years</div>
+                    <div class="sub-category-option-value">12 - 16 Years</div>
+                    <div class="sub-category-option-header">Girls Clothing</div>
+                    <div class="sub-category-option-value">Tops</div>
+                    <div class="sub-category-option-value">Jeans And Trousers</div>
+                    <div class="sub-category-option-value">Dresses</div>
+                    <div class="sub-category-option-value">Sportswear</div>
+                    <div class="sub-category-option-value">Jumpsuits &amp; Dungarees-</div>
+                    <div class="sub-category-option-value">Skirts, Short, &amp; Jumpsuits</div>
+                    <div class="sub-category-option-value">Ethnic Wear</div>
+                    <div class="sub-category-option-value">Combo Suits</div>
+                    <div class="sub-category-option-value">Night Wear</div>
+                    <div class="sub-category-option-value">Winter Wear</div>
+                    <div class="sub-category-option-header">Shop By Age</div>
+                    <div class="sub-category-option-value">2 - 6 Years</div>
+                    <div class="sub-category-option-value">6 - 12 Years</div>
+                    <div class="sub-category-option-value">12 - 16 Years</div>
+                    <div class="sub-category-option-header">Infants</div>
+                    <div class="sub-category-option-value">Jeans &amp; Trousers</div>
+                    <div class="sub-category-option-value">Tops &amp; T-shirts</div>
+                    <div class="sub-category-option-value">Combo Sets</div>
+                    <div class="sub-category-option-value">Jumpsuits &amp; Dungarees</div>
+                    <div class="sub-category-option-value">Dresses</div>
+                    <div class="sub-category-option-value">Shirts</div>
+                    <div class="sub-category-option-value">Ethnic Wear</div>
+                    <div class="sub-category-option-value">Shorts &amp; Jumpsuits</div>
+                    <div class="sub-category-option-value">Winter Wear</div>
+                    <div class="sub-category-option-header">Shop By Age</div>
+                    <div class="sub-category-option-value">0 - 6 months</div>
+                    <div class="sub-category-option-value">6 - 12 months</div>
+                    <div class="sub-category-option-value">1 - 2 Years</div>
+                    <div class="sub-category-option-header">View All Clothing</div>
+                    <div class="sub-category-option-header">Boys Footwear</div>
+                    <div class="sub-category-option-header">Girls Footwear</div>
+                    <div class="sub-category-option-header">Watches</div>
+                    <div class="sub-category-option-header">Kids Home &amp; Travel</div>
+                  </section>
+                  <section>
+                    
+                    <div class="sub-category-option-header">Fragrance Store</div>
+                    <div class="sub-category-option-value">Men</div>
+                    <div class="sub-category-option-value">Women</div>
+                    <div class="sub-category-option-value">Perfumes</div>
+                    <div class="sub-category-option-value">Gift Sets</div>
+                    <div class="sub-category-option-header">View By Note</div>
+                    <div class="sub-category-option-value">Woody &amp; Spicy Fragrances</div>
+                    <div class="sub-category-option-value">Floral &amp; Fruity Fragrances</div>
+                    <div class="sub-category-option-value">Fresh &amp; Citrus Fragrances</div>
+                    <div class="sub-category-option-header">Makeup</div>
+                    <div class="sub-category-option-value">Eyes</div>
+                    <div class="sub-category-option-value">Face</div>
+                    <div class="sub-category-option-value">Lips</div>
+                    <div class="sub-category-option-value">Nails</div>
+                    <div class="sub-category-option-value">All Makeup</div>
+                    <div class="sub-category-option-header">Skin</div>
+                    <div class="sub-category-option-value">Cleansers</div>
+                    <div class="sub-category-option-value">Moisturizers &amp; Serums</div>
+                    <div class="sub-category-option-value">Facial Peels &amp; Masks</div>
+                    <div class="sub-category-option-value">Eye creams</div>
+                    <div class="sub-category-option-value">Combo Sets</div>
+                    <div class="sub-category-option-value">Men's Skin care</div>
+                    <div class="sub-category-option-header">Natural Skin Care</div>
+                    <div class="sub-category-option-header">K-Skin care</div>
+                    <div class="sub-category-option-header">Derma Skin care</div>
+                    <div class="sub-category-option-value">All skin</div>
+                    <div class="sub-category-option-header">Hair</div>
+                    <div class="sub-category-option-value">Shampoos &amp; Conditioners</div>
+                    <div class="sub-category-option-value">Hair Styling &amp; Care</div>
+                    <div class="sub-category-option-value">Hair Oils</div>
+                    <div class="sub-category-option-value">Hair Masks</div>
+                    <div class="sub-category-option-header">Professional Hair care</div>
+                    <div class="sub-category-option-header">Natural Hair care</div>
+                    <div class="sub-category-option-value">All Hair</div>
+                    <div class="sub-category-option-header">Men's Grooming</div>
+                    <div class="sub-category-option-value">Shaving</div>
+                    <div class="sub-category-option-value">Beard &amp; Moustache Care</div>
+                    <div class="sub-category-option-value">Grooming Kits</div>
+                    <div class="sub-category-option-value">Overall Men's Grooming</div>
+                    <div class="sub-category-option-header">All Beauty &amp; Grooming</div>
+                  </section>
+                  <section>
+                    
+                    <div class="sub-category-option-header">Bedding and Linen</div>
+                    <div class="sub-category-option-value">Bed Sheet Sets</div>
+                    <div class="sub-category-option-value">Bed Linen Sets</div>
+                    <div class="sub-category-option-value">Bed Covers</div>
+                    <div class="sub-category-option-value">Pillow Covers and Shams</div>
+                    <div class="sub-category-option-value">Quilts and Rajais</div>
+                    <div class="sub-category-option-value">Duvet Covers</div>
+                    <div class="sub-category-option-value">Comforters</div>
+                    <div class="sub-category-option-value">Dohars</div>
+                    <div class="sub-category-option-value">Kids Bedding Linen</div>
+                    <div class="sub-category-option-value">Bed Pillows</div>
+                    <div class="sub-category-option-header">Bath Linen and Accessories</div>
+                    <div class="sub-category-option-value">Towels</div>
+                    <div class="sub-category-option-value">Bath Mats and Rugs</div>
+                    <div class="sub-category-option-value">Bathrobes</div>
+                    <div class="sub-category-option-value">Kids Bath Linen</div>
+                    <div class="sub-category-option-header">Room Furnishings</div>
+                    <div class="sub-category-option-value">Cushions</div>
+                    <div class="sub-category-option-value">Cushion covers</div>
+                    <div class="sub-category-option-value">Rugs and Dhurries</div>
+                    <div class="sub-category-option-value">Carpets</div>
+                    <div class="sub-category-option-value">Door Mats</div>
+                    <div class="sub-category-option-value">Curtains</div>
+                    <div class="sub-category-option-header">Lamps and Lighting</div>
+                    <div class="sub-category-option-value">LED Bulbs</div>
+                    <div class="sub-category-option-value">Table Lamps</div>
+                    <div class="sub-category-option-value">Wall Lamps</div>
+                    <div class="sub-category-option-value">Ceiling Lamps</div>
+                    <div class="sub-category-option-value">Study Table Lamps</div>
+                    <div class="sub-category-option-header">Kitchen</div>
+                    <div class="sub-category-option-value">Cookware and Bakeware</div>
+                    <div class="sub-category-option-header">Tableware</div>
+                    <div class="sub-category-option-value">Table Cloth</div>
+                    <div class="sub-category-option-value">Table Runners</div>
+                    <div class="sub-category-option-value">Table Napkins</div>
+                    <div class="sub-category-option-header">Home Decor</div>
+                    <div class="sub-category-option-value">Candles</div>
+                    <div class="sub-category-option-value">Tea Light candles</div>
+                    <div class="sub-category-option-value">Scented Candles</div>
+                    <div class="sub-category-option-value">Home Fragrances</div>
+                    <div class="sub-category-option-value">Wall Decor</div>
+
+                  </section>
+                </div>
+            </div>
+            </div>
+            <div class="brands" onmouseover="showb()" onmouseout="hideb()">Brands
+              <div class="imgg"></div>
+              <div class="category-expand b">
+                <div class="sub-category bs">
+                    <div class="sub-category-value" onmouseover="showb(8)" onmouseout="hideb(8)" >TV & Appliances
+                        <div class="arrow arrow-icon"></div>
+                    </div>
+                    <div class="sub-category-value" onmouseover="showb(9)" onmouseout="hideb(9)" >Electronics
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="sub-category-value" onmouseover="showb(10)" onmouseout="hideb(10)" >Women's Wear
+                        <div class="arrow "></div>
+                    </div>
+                    <div class="sub-category-value" onmouseover="showb(11)" onmouseout="hideb(11)" >Men's Wear
+                        <div class="arrow "></div>
+                    </div>
+                    <div class="sub-category-value" onmouseover="showb(12)" onmouseout="hideb(12)" >Footwear
+                        <div class="arrow "></div>
+                    </div>
+                    <div class="sub-category-value" onmouseover="showb(13)" onmouseout="hideb(13)" >Jewellery
+                        <div class="arrow "></div>
+                    </div>
+                    <div class="sub-category-value" onmouseover="showb(14)" onmouseout="hideb(14)" >Watches & Accessories
+                        <div class="arrow "></div>
+                    </div>
+                    <div class="sub-category-value" onmouseover="showb(15)" onmouseout="hideb(15)" >Kids
+                        <div class="arrow "></div>
+                    </div>
+                </div>
+                <!--  sub category sub values   -->
+                <div class="sub-category-option ">
+                  <section class="show">
+                    <div class="sub-category-option-header">Popular Brands</div>
+                    <div class="sub-category-option-value">Lg</div>
+                    <div class="sub-category-option-value">Samsung</div>
+                    <div class="sub-category-option-value">Sony</div>
+                    <div class="sub-category-option-value">Hitachi</div>
+                    <div class="sub-category-option-value">Daikin</div>
+                    <div class="sub-category-option-value">Carrier</div>
+                    <div class="sub-category-option-value">Blue Star</div>
+                    <div class="sub-category-option-value">Bosch</div>
+                    <div class="sub-category-option-value">Xiaomi</div>
+                    <div class="sub-category-option-value">Panasonic</div>
+                    <div class="sub-category-option-value">Bajaj</div>
+                    <div class="sub-category-option-value">Kent</div>
+                    <div class="sub-category-option-value">Havells</div>
+                    <div class="sub-category-option-value">Usha</div>
+                    <div class="sub-category-option-header">Featured brand</div>
+                    <div class="sub-category-option-value">VU</div>
+                    <div class="sub-category-option-value">Lloyd</div>
+                    <div class="sub-category-option-value">TCL</div>
+                    <div class="sub-category-option-value">Sanyo</div>
+                    <div class="sub-category-option-value">Godrej</div>
+                    <div class="sub-category-option-value">Prestige</div>
+                    <div class="sub-category-option-value">Wonderchef</div>
+                    <div class="sub-category-option-value">Tata Swach</div>
+                    <div class="sub-category-option-value">Livpure</div>
+                    <div class="sub-category-option-value">Luminous</div>
+                    <div class="sub-category-option-value">KitchenAid</div>
+                    <div class="sub-category-option-value">Syska</div>
+                  </section>
+                  <section>
+                    <div class="sub-category-option-header">Popular brands</div>
+                      <div class="sub-category-option-value">Apple</div>
+                      <div class="sub-category-option-value">Oppo</div>
+                      <div class="sub-category-option-value">Xiaomi</div>
+                      <div class="sub-category-option-value">HP</div>
+                      <div class="sub-category-option-value">Dell</div>
+                      <div class="sub-category-option-value">Asus</div>
+                      <div class="sub-category-option-value">Canon</div>
+                      <div class="sub-category-option-value">Nikon</div>
+                      <div class="sub-category-option-value">GoPro</div>
+                      <div class="sub-category-option-value">Fitbit</div>
+                      <div class="sub-category-option-value">Google</div>
+                      <div class="sub-category-option-value">Seagate</div>
+                      <div class="sub-category-option-value">WD</div>
+                      <div class="sub-category-option-value">SanDisk</div>
+                      <div class="sub-category-option-header">Featured brands</div>
+                      <div class="sub-category-option-value">Nokia</div>
+                      <div class="sub-category-option-value">Motorola</div>
+                      <div class="sub-category-option-value">Boult Audio</div>
+                      <div class="sub-category-option-value">Acer</div>
+                      <div class="sub-category-option-value">Microsoft</div>
+                      <div class="sub-category-option-value">Noise</div>
+                      <div class="sub-category-option-value">Ambrane</div>
+                      <div class="sub-category-option-value">Zebronics</div>
+                      <div class="sub-category-option-value">Epson</div>
+                      <div class="sub-category-option-value">Kingston</div>
+                      <div class="sub-category-option-value">Blaupunkt</div>
+                      <div class="sub-category-option-value">Sennheiser</div>
+                      <div class="sub-category-option-value">Garmin</div>
+                  </section>
+                  <section>
+                    <div class="sub-category-option-header">Footwear</div>
+                    <div class="sub-category-option-value">Casual Shoes</div>
+                    <div class="sub-category-option-value">Sneakers</div>
+                    <div class="sub-category-option-value">Formal Shoes</div>
+                    <div class="sub-category-option-value">Training Shoes</div>
+                    <div class="sub-category-option-value">Running Shoes</div>
+                    <div class="sub-category-option-value">Sports Shoes</div>
+                    <div class="sub-category-option-value">Flip Flops</div>
+                    <div class="sub-category-option-value">Boots</div>
+                    <div class="sub-category-option-header">Sports Wear</div>
+                    <div class="sub-category-option-value">T-shirts & Jersys</div>
+                    <div class="sub-category-option-value">Shorts</div>
+                    <div class="sub-category-option-value">Sports jackets</div>
+                    <div class="sub-category-option-value">Gym Gear</div>
+                    <div class="sub-category-option-value">Joggers</div>
+                    <div class="sub-category-option-header">Ethnic Wear</div>
+                    <div class="sub-category-option-header">Clothing</div>
+                    <div class="sub-category-option-value">T-shirts & Polos</div>
+                    <div class="sub-category-option-value">Casual Shirts</div>
+                    <div class="sub-category-option-value">Jeans</div>
+                    <div class="sub-category-option-value">Trousers</div>
+                    <div class="sub-category-option-value">Shorts</div>
+                    <div class="sub-category-option-value">Casual Jackets</div>
+                    <div class="sub-category-option-value">Winter Wear</div>
+                    <div class="sub-category-option-value">Formal Shirts</div>
+                    <div class="sub-category-option-value">Formal Trouser</div>
+                    <div class="sub-category-option-value">Innerwear</div>
+                    <div class="sub-category-option-value">Sleepwear</div>
+                    <div class="sub-category-option-value">Formal Blazer</div>
+                  </section>
+                  <section>
+                    <div class="sub-category-option-header">Footwear</div>
+                    <div class="sub-category-option-value">Casual Shoes</div>
+                    <div class="sub-category-option-value">Sneakers</div>
+                    <div class="sub-category-option-value">Formal Shoes</div>
+                    <div class="sub-category-option-value">Training Shoes</div>
+                    <div class="sub-category-option-value">Running Shoes</div>
+                    <div class="sub-category-option-value">Sports Shoes</div>
+                    <div class="sub-category-option-value">Flip Flops</div>
+                    <div class="sub-category-option-value">Boots</div>
+                    <div class="sub-category-option-header">Sports Wear</div>
+                    <div class="sub-category-option-value">T-shirts & Jersys</div>
+                    <div class="sub-category-option-value">Shorts</div>
+                    <div class="sub-category-option-value">Sports jackets</div>
+                    <div class="sub-category-option-value">Gym Gear</div>
+                    <div class="sub-category-option-value">Joggers</div>
+                    <div class="sub-category-option-header">Ethnic Wear</div>
+                    <div class="sub-category-option-header">Clothing</div>
+                    <div class="sub-category-option-value">T-shirts & Polos</div>
+                    <div class="sub-category-option-value">Casual Shirts</div>
+                    <div class="sub-category-option-value">Jeans</div>
+                    <div class="sub-category-option-value">Trousers</div>
+                    <div class="sub-category-option-value">Shorts</div>
+                    <div class="sub-category-option-value">Casual Jackets</div>
+                    <div class="sub-category-option-value">Winter Wear</div>
+                    <div class="sub-category-option-value">Formal Shirts</div>
+                    <div class="sub-category-option-value">Formal Trouser</div>
+                    <div class="sub-category-option-value">Innerwear</div>
+                    <div class="sub-category-option-value">Sleepwear</div>
+                    <div class="sub-category-option-value">Formal Blazer</div>
+                  </section>
+                  <section>
+                    <div class="sub-category-option-header">Footwear</div>
+                    <div class="sub-category-option-value">Casual Shoes</div>
+                    <div class="sub-category-option-value">Sneakers</div>
+                    <div class="sub-category-option-value">Formal Shoes</div>
+                    <div class="sub-category-option-value">Training Shoes</div>
+                    <div class="sub-category-option-value">Running Shoes</div>
+                    <div class="sub-category-option-value">Sports Shoes</div>
+                    <div class="sub-category-option-value">Flip Flops</div>
+                    <div class="sub-category-option-value">Boots</div>
+                    <div class="sub-category-option-header">Sports Wear</div>
+                    <div class="sub-category-option-value">T-shirts & Jersys</div>
+                    <div class="sub-category-option-value">Shorts</div>
+                    <div class="sub-category-option-value">Sports jackets</div>
+                    <div class="sub-category-option-value">Gym Gear</div>
+                    <div class="sub-category-option-value">Joggers</div>
+                    <div class="sub-category-option-header">Ethnic Wear</div>
+                    <div class="sub-category-option-header">Clothing</div>
+                    <div class="sub-category-option-value">T-shirts & Polos</div>
+                    <div class="sub-category-option-value">Casual Shirts</div>
+                    <div class="sub-category-option-value">Jeans</div>
+                    <div class="sub-category-option-value">Trousers</div>
+                    <div class="sub-category-option-value">Shorts</div>
+                    <div class="sub-category-option-value">Casual Jackets</div>
+                    <div class="sub-category-option-value">Winter Wear</div>
+                    <div class="sub-category-option-value">Formal Shirts</div>
+                    <div class="sub-category-option-value">Formal Trouser</div>
+                    <div class="sub-category-option-value">Innerwear</div>
+                    <div class="sub-category-option-value">Sleepwear</div>
+                    <div class="sub-category-option-value">Formal Blazer</div>
+                  </section>
+                  <section>
+                    <div class="sub-category-option-header">Footwear</div>
+                    <div class="sub-category-option-value">Casual Shoes</div>
+                    <div class="sub-category-option-value">Sneakers</div>
+                    <div class="sub-category-option-value">Formal Shoes</div>
+                    <div class="sub-category-option-value">Training Shoes</div>
+                    <div class="sub-category-option-value">Running Shoes</div>
+                    <div class="sub-category-option-value">Sports Shoes</div>
+                    <div class="sub-category-option-value">Flip Flops</div>
+                    <div class="sub-category-option-value">Boots</div>
+                    <div class="sub-category-option-header">Sports Wear</div>
+                    <div class="sub-category-option-value">T-shirts & Jersys</div>
+                    <div class="sub-category-option-value">Shorts</div>
+                    <div class="sub-category-option-value">Sports jackets</div>
+                    <div class="sub-category-option-value">Gym Gear</div>
+                    <div class="sub-category-option-value">Joggers</div>
+                    <div class="sub-category-option-header">Ethnic Wear</div>
+                    <div class="sub-category-option-header">Clothing</div>
+                    <div class="sub-category-option-value">T-shirts & Polos</div>
+                    <div class="sub-category-option-value">Casual Shirts</div>
+                    <div class="sub-category-option-value">Jeans</div>
+                    <div class="sub-category-option-value">Trousers</div>
+                    <div class="sub-category-option-value">Shorts</div>
+                    <div class="sub-category-option-value">Casual Jackets</div>
+                    <div class="sub-category-option-value">Winter Wear</div>
+                    <div class="sub-category-option-value">Formal Shirts</div>
+                    <div class="sub-category-option-value">Formal Trouser</div>
+                    <div class="sub-category-option-value">Innerwear</div>
+                    <div class="sub-category-option-value">Sleepwear</div>
+                    <div class="sub-category-option-value">Formal Blazer</div>
+                  </section>
+                  <section>
+                    <div class="sub-category-option-header">Footwear</div>
+                    <div class="sub-category-option-value">Casual Shoes</div>
+                    <div class="sub-category-option-value">Sneakers</div>
+                    <div class="sub-category-option-value">Formal Shoes</div>
+                    <div class="sub-category-option-value">Training Shoes</div>
+                    <div class="sub-category-option-value">Running Shoes</div>
+                    <div class="sub-category-option-value">Sports Shoes</div>
+                    <div class="sub-category-option-value">Flip Flops</div>
+                    <div class="sub-category-option-value">Boots</div>
+                    <div class="sub-category-option-header">Sports Wear</div>
+                    <div class="sub-category-option-value">T-shirts & Jersys</div>
+                    <div class="sub-category-option-value">Shorts</div>
+                    <div class="sub-category-option-value">Sports jackets</div>
+                    <div class="sub-category-option-value">Gym Gear</div>
+                    <div class="sub-category-option-value">Joggers</div>
+                    <div class="sub-category-option-header">Ethnic Wear</div>
+                    <div class="sub-category-option-header">Clothing</div>
+                    <div class="sub-category-option-value">T-shirts & Polos</div>
+                    <div class="sub-category-option-value">Casual Shirts</div>
+                    <div class="sub-category-option-value">Jeans</div>
+                    <div class="sub-category-option-value">Trousers</div>
+                    <div class="sub-category-option-value">Shorts</div>
+                    <div class="sub-category-option-value">Casual Jackets</div>
+                    <div class="sub-category-option-value">Winter Wear</div>
+                    <div class="sub-category-option-value">Formal Shirts</div>
+                    <div class="sub-category-option-value">Formal Trouser</div>
+                    <div class="sub-category-option-value">Innerwear</div>
+                    <div class="sub-category-option-value">Sleepwear</div>
+                    <div class="sub-category-option-value">Formal Blazer</div>
+                  </section>
+                  <section>
+                    <div class="sub-category-option-header">Footwear</div>
+                    <div class="sub-category-option-value">Casual Shoes</div>
+                    <div class="sub-category-option-value">Sneakers</div>
+                    <div class="sub-category-option-value">Formal Shoes</div>
+                    <div class="sub-category-option-value">Training Shoes</div>
+                    <div class="sub-category-option-value">Running Shoes</div>
+                    <div class="sub-category-option-value">Sports Shoes</div>
+                    <div class="sub-category-option-value">Flip Flops</div>
+                    <div class="sub-category-option-value">Boots</div>
+                    <div class="sub-category-option-header">Sports Wear</div>
+                    <div class="sub-category-option-value">T-shirts & Jersys</div>
+                    <div class="sub-category-option-value">Shorts</div>
+                    <div class="sub-category-option-value">Sports jackets</div>
+                    <div class="sub-category-option-value">Gym Gear</div>
+                    <div class="sub-category-option-value">Joggers</div>
+                    <div class="sub-category-option-header">Ethnic Wear</div>
+                    <div class="sub-category-option-header">Clothing</div>
+                    <div class="sub-category-option-value">T-shirts & Polos</div>
+                    <div class="sub-category-option-value">Casual Shirts</div>
+                    <div class="sub-category-option-value">Jeans</div>
+                    <div class="sub-category-option-value">Trousers</div>
+                    <div class="sub-category-option-value">Shorts</div>
+                    <div class="sub-category-option-value">Casual Jackets</div>
+                    <div class="sub-category-option-value">Winter Wear</div>
+                    <div class="sub-category-option-value">Formal Shirts</div>
+                    <div class="sub-category-option-value">Formal Trouser</div>
+                    <div class="sub-category-option-value">Innerwear</div>
+                    <div class="sub-category-option-value">Sleepwear</div>
+                    <div class="sub-category-option-value">Formal Blazer</div>
+                  </section>
+                </div>
+                <div class="brand-logos">
+                  <Blogo class="showb">
+                    <div class="elec-logo">
+                      <img src="images/home page/tv& (1).jpg" alt="">
+                    </div>
+                    <div class="elec-logo">
+                      <img src="images/home page/tv& (2).jpg" alt="">
+                    </div>
+                    <div class="elec-logo">
+                      <img src="images/home page/tv& (4).jpg" alt="">
+                    </div>
+                    <div class="elec-logo">
+                      <img src="images/home page/tv& (4).jpg" alt="">
+                    </div>
+                  </Blogo>
+                  <Blogo >
+                    <div class="elec-logo">
+                      <img src="images/home page/elec (2).jpg" alt="">
+                    </div>
+                    <div class="elec-logo">
+                      <img src="images/home page/elec (6).jpg" alt="">
+                    </div>
+                    <div class="elec-logo">
+                      <img src="images/home page/elec (1).jpg" alt="">
+                    </div>
+                    <div class="elec-logo">
+                      <img src="images/home page/elec (3).jpg" alt="">
+                    </div>
+                    <div class="elec-logo">
+                      <img src="images/home page/elec (4).jpg" alt="">
+                    </div>
+                    <div class="elec-logo">
+                      <img src="images/home page/elec (5).jpg" alt="">
+                    </div>
+                  </Blogo>
+                  <Blogo >
+                    <div class="elec-logo">
+                      <img src="images/home page/tv& (1).jpg" alt="">
+                    </div>
+                    <div class="elec-logo">
+                      <img src="images/home page/tv& (2).jpg" alt="">
+                    </div>
+                    <div class="elec-logo">
+                      <img src="images/home page/tv& (4).jpg" alt="">
+                    </div>
+                    <div class="elec-logo">
+                      <img src="images/home page/tv& (4).jpg" alt="">
+                    </div>
+                  </Blogo>
+                  <Blogo >
+                    <div class="elec-logo">
+                      <img src="images/home page/tv& (1).jpg" alt="">
+                    </div>
+                    <div class="elec-logo">
+                      <img src="images/home page/tv& (2).jpg" alt="">
+                    </div>
+                    <div class="elec-logo">
+                      <img src="images/home page/tv& (4).jpg" alt="">
+                    </div>
+                    <div class="elec-logo">
+                      <img src="images/home page/tv& (4).jpg" alt="">
+                    </div>
+                  </Blogo>
+                  <Blogo >
+                    <div class="elec-logo">
+                      <img src="images/home page/tv& (1).jpg" alt="">
+                    </div>
+                    <div class="elec-logo">
+                      <img src="images/home page/tv& (2).jpg" alt="">
+                    </div>
+                    <div class="elec-logo">
+                      <img src="images/home page/tv& (4).jpg" alt="">
+                    </div>
+                    <div class="elec-logo">
+                      <img src="images/home page/tv& (4).jpg" alt="">
+                    </div>
+                  </Blogo>
+                  <Blogo >
+                    <div class="elec-logo">
+                      <img src="images/home page/tv& (1).jpg" alt="">
+                    </div>
+                    <div class="elec-logo">
+                      <img src="images/home page/tv& (2).jpg" alt="">
+                    </div>
+                    <div class="elec-logo">
+                      <img src="images/home page/tv& (4).jpg" alt="">
+                    </div>
+                    <div class="elec-logo">
+                      <img src="images/home page/tv& (4).jpg" alt="">
+                    </div>
+                  </Blogo>
+                  <Blogo >
+                    <div class="elec-logo">
+                      <img src="images/home page/tv& (1).jpg" alt="">
+                    </div>
+                    <div class="elec-logo">
+                      <img src="images/home page/tv& (2).jpg" alt="">
+                    </div>
+                    <div class="elec-logo">
+                      <img src="images/home page/tv& (4).jpg" alt="">
+                    </div>
+                    <div class="elec-logo">
+                      <img src="images/home page/tv& (4).jpg" alt="">
+                    </div>
+                  </Blogo>
+                  <Blogo >
+                    <div class="elec-logo">
+                      <img src="images/home page/tv& (1).jpg" alt="">
+                    </div>
+                    <div class="elec-logo">
+                      <img src="images/home page/tv& (2).jpg" alt="">
+                    </div>
+                    <div class="elec-logo">
+                      <img src="images/home page/tv& (4).jpg" alt="">
+                    </div>
+                    <div class="elec-logo">
+                      <img src="images/home page/tv& (4).jpg" alt="">
+                    </div>
+                  </Blogo>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cross"></div>
+          <div class="search-cart-page">
+            <div class="cart-whistlist">
+              <div class="whist-list">
+                <img src="images/home page/whistlistt.svg" alt="">
+              </div>
+              <div class="cart" >
+                <a href="cart/cart.html">
+                  <span class="numb">0</span>
+                <img src="images/home page/cart icon.svg" alt="" style="width: 20px;">
+                </a>
+              </div>
+            </div>
+            <div class="search">
+              <input type="text" id="search-expand" onkeydown="searchProd(event)" autocomplete="off" placeholder="Search">
+              <div class="search-icon">
+                <img src="images/home page/searchwhite.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ham">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <!--  Login Signup page starts  -->
+    <div class="cover">
+      <div class="container" id="container">
+        <div class="form-container sign-up-container">
+          <form action="#" id="signup-form">
+            <i class="far fa-times-circle bd" onclick="clos()"></i>
+            <h1>Create Account</h1>
+            <div class="social-container">
+              <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span style="text-decoration: none;">or use your email for registration</span>
+            <input id="name" name="name" type="text" placeholder="Name" />
+            <input id="mail" name="mail" type="email" placeholder="Email" />
+            <input id="pass" name="pass" type="password" placeholder="Password" />
+            <button id="sign-up" onclick="register(event)">Sign Up</button>
+          </form>
+        </div>
+        <div class="form-container sign-in-container">
+          <form action="#" id="login-form">
+            
+            <h1>Sign in</h1>
+            <div class="social-container">
+              <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span style="text-decoration: none;">or use your account</span>
+            <input id="email" name="email" type="email" placeholder="Email" />
+            <input id="passw" name="passw" type="password" placeholder="Password" />
+            <a href="#">Forgot your password?</a>
+            <button onclick="login(event)">Sign In</button>
+          </form>
+        </div>
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <h1>Welcome Back!</h1>
+              <p>To keep connected with us please login with your personal info</p>
+              <button class="ghost" id="signIn">Sign In</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <i class="far fa-times-circle bb" onclick="clos()"></i>
+                  <h1>Welcome to Tata CLiQ</h1>
+                  <p>Enter your personal details and start journey with us</p>
+                  <button class="ghost" id="signUp">Sign Up</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+    <!--  Login Signup page Ends  -->
+    <div class="keep">
+      <div class="speech-bubble">
+        <div class="register" onclick="ope()" >Login/ Register</div>
+        <div class="account" onclick="ope()">
+          <img src="icons/profileicon.png" alt="..." style="width: 25px;">My account
+        </div>
+        <div class="account" onclick="ope()">
+          <img src="icons/order-history.a92cd34e19fa.svg" alt="..." style="width: 20px; margin-left: 4px;">Order History
+        </div>
+        <div class="account" onclick="ope()">
+          <img src="icons/whist.svg" alt="..." style="width: 15px; margin-left: 7px;">Saved List
+        </div>
+        <div class="account" onclick="ope()">
+          <img src="icons/alert.89aa376e9ac0.svg" alt="..."style="width: 15px; margin-left:7px ">Alert & Coupon
+        </div>
+        <div class="account" onclick="ope()">
+          <img src="icons/giftCards.c9b393b81026.svg" alt="..." style="width: 20px; margin-left: 1px;">Gift Card
+        </div>
+        <div class="account" onclick="ope()">
+          <img src="icons/cliqCash.89de362374b9.svg" alt="..." style="width: 15px; margin-left: 5px;" >CLiQ Cash
+        </div>
+        <div class="account logout" onclick="logout()">
+          <i class="fas fa-sign-out-alt" style="width: 20px;height: 20px; margin-left: 5px;margin-right: 4px;"></i>Log Out
+        </div>
+      </div>
+      </div>
+    <!-- --------- Nav Bar Ends ------------------->
+
+    <h1>Shirts</h1>
+    <p id="noOfProd"> Products</p>
+    <!-- <p>Home > Footwear > Men</p> -->
+    <ul id="breadcrumbs">
+        <li><a href="index.html">Home</a></li>&nbsp;<div></div>&nbsp;
+        <li><a href="#">Footwear</a></li>&nbsp;<div></div>&nbsp;
+        <li><a href="#">Men</a></li>&nbsp;<div></div>&nbsp;
+        <li>Formal</li>
+    </ul>
+
+    <div id="sorting_changeLayout">
+        <div class="hero">
+            <div class="selector">
+                <div id="selectedField">
+                    <p>Sort By: <span id="selectedText"></span></p>
+                    <img src="https://www.tatacliq.com/src/general/components/img/sortIcon.44a2548639d1.svg" alt="">
+                </div>
+
+                <ul id="lists" class="hideList">
+                    <li class="options">
+                      <p>Popularity</p>
+                    </li>
+                    <li class="options">
+                      <p>Price Low to High</p>
+                    </li>
+                    <li class="options">
+                      <p>Price High to Low</p>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div id="changeLayout">
+            <div class="listLayout" id="gridLayout" onclick="changeGridColumn()"></div>
+        </div>
+    </div>
+
+    <div id="footwearPage">
+      <div id="prodFilters_cont">
+        <div id="filterContHeading">
+          <h3>Filters</h3>
+          <span id="filterClear">Clear All</span>
+        </div>
+        <div id="prodFilters">
+          <div>Department
+              <button id="subfilter_depart">Footwear</button>
+          </div>
+          <div>Category
+              <button id="subfilter_cat">Men &nbsp; &#10006;</button>
+          </div>
+          <div>Product Type
+              <button id="subfilter_prodtype">Formal &nbsp; &#10006;</button>
+          </div>
+          <div class="brand_color_collapse expand" onclick="collapse(0)">
+              <div class="filter_name">
+                  <div>Brand</div>
+                  <span class="plus_sign">&#10006;</span>
+              </div>
+              <div class="subfilter_brand">
+                  <div class="count_of_products">
+                      <div>
+                          <label class="radio" for="Arrow">
+                          <input type="checkbox" id="Arrow" name="brand" value="Arrow">
+                          <span class="check"></span>
+                          Arrow</label>
+                      </div>
+                      <strong style="font-size: 16px; color: #c7c7c7; font-weight: 500;">7</strong>
+                  </div>
+                  <div class="count_of_products">
+                      <div>
+                          <label class="radio" for="Ruosh">
+                          <input type="checkbox" id="Ruosh" name="brand" value="Ruosh">
+                          <span class="check"></span>
+                          Ruosh</label>
+                      </div>
+                      <strong style="font-size: 16px; color: #c7c7c7; font-weight: 500;">5</strong>
+                  </div>
+              </div>
+          </div>
+          <div class="brand_color_collapse expand" onclick="collapse(1)">
+              <div class="filter_name">
+                  <div>Colour</div>
+                  <span class="plus_sign">&#10006;</span>
+              </div>
+              <div class="subfilter_brand">
+                      <div>
+                          <label class="radio" for="Black">
+                          <input onclick="black_shoes()" type="checkbox" id="Black" name="color" value="Black">
+                          <span class="check"></span>
+                          Black</label>
+                      </div>
+                      <div>
+                          <label class="radio" for="Brown">
+                          <input type="checkbox" id="Brown" name="color" value="Brown">
+                          <span class="check"></span>
+                          Brown</label>
+                      </div>
+              </div>
+          </div>
+          <div class="filter_name">
+              <div>Price</div>
+              <span class="plus_sign">&#10006;</span>
+          </div>
+          <div class="filter_name">
+              <div>Discount</div>
+              <span class="plus_sign">&#10006;</span>
+          </div>
+          <div class="filter_name">
+              <div>Size</div>
+              <span class="plus_sign">&#10006;</span>
+          </div>
+          <div class="filter_name">
+              <div>Clog/Flip-Flop Type</div>
+              <span class="plus_sign">&#10006;</span>
+          </div>
+          <div class="filter_name">
+              <div>Fastening</div>
+              <span class="plus_sign">&#10006;</span>
+          </div>
+          <div class="filter_name">
+              <div>Sandal Type</div>
+              <span class="plus_sign">&#10006;</span>
+          </div>
+          <div class="filter_name">
+              <div>Shoe/Boot Type</div>
+              <span class="plus_sign">&#10006;</span>
+          </div>
+          <div class="filter_name">
+              <div>Size Type</div>
+              <span class="plus_sign">&#10006;</span>
+          </div>
+          <div class="filter_name">
+              <div>Sole Material</div>
+              <span class="plus_sign">&#10006;</span>
+          </div>
+          <div class="filter_name">
+              <div>Tip Shape</div>
+              <span class="plus_sign">&#10006;</span>
+          </div>
+          <div class="filter_name">
+              <div>All Discount</div>
+              <span class="plus_sign">&#10006;</span>
+          </div>
+          <div class="filter_name">
+              <div>Availability</div>
+              <span class="plus_sign">&#10006;</span>
+          </div>
+        </div>
+    </div>
+      <div id="products_footwear"></div>
+</div>
+
+ <div class="footer">
+     <div class="containers">
+      <div class="trust-section">
+        <div class="trust-component">
+          <div class="trust-logo">
+            <div class="icon-image" style="background-image: url(icons/tata_trust_1.png);"></div>
+          </div>
+          <div class="trust-text">Tata Trust</div>
+        </div>
+        <div class="trust-component">
+          <div class="trust-logo">
+            <div class="icon-image" style="background-image: url(icons/cliq_and_piq_icon.png);"></div>
+          </div>
+          <div class="trust-text">QUiQ PiQ</div>
+        </div>
+        <div class="trust-component">
+          <div class="trust-logo">
+            <div class="icon-image" style="background-image: url(icons/brands_icon.png);"></div>
+          </div>
+          <div class="trust-text">Authentic Brands</div>
+        </div>
+        <div class="trust-component">
+          <div class="trust-logo">
+            <div class="icon-image" style="background-image: url(icons/return_icon.png);"></div>
+          </div>
+          <div class="trust-text">Easy Returns</div>
+        </div>
+      </div>
+      </div>
+      <div class="linkSub-holder">
+        <div class="link-holder">
+          <div class="linkSection">
+            <div class="linkHeader">Nexa MarketPlace</div>
+            <div class="link">About Us</div>
+            <div class="link">Careers</div>
+            <div class="link">Sell With Us</div>
+            <div class="link">Terms Of Use</div>
+            <div class="link">Privacy Policy</div>
+            <div class="link">Affiliates</div>
+            <div class="link">Sitemap</div>
+          </div>
+          <div class="linkSection">
+            <div class="linkHeader">Customer Services</div>
+            <div class="link">Shopping</div>
+            <div class="link">Frequently Asked Questions</div>
+            <div class="link">Offers & Promotions</div>
+            <div class="link">Payments</div>
+            <div class="link">Cancellation</div>
+            <div class="link">Returns & Refunds</div>
+            <div class="link">CliQ And PiQ</div>
+            <div class="link">Return To Store</div>
+            <div class="link">Electronics Return Policy</div>
+            <div class="link">Contact Us</div>
+            <div class="link">Reviews Guidelines</div>
+          </div>
+          <div class="linkSection">
+            <div class="linkHeader">My Nexa CLiQ</div>
+            <div class="link">My Account</div>
+            <div class="link">My Order</div>
+            <div class="link">My Shopping Bag</div>
+            <div class="link">My Wishlist</div>
+          </div>
+        </div>
+        <div class="news"></div>
+      </div>
+     <div class="containers">
+      <div class="social-holder">
+        <div class="downloadApp">
+          <div class="download-text">Download App</div>
+          <a href="#"><div class="appIconHolder">
+            <div class="icon-image" style="background-image:url(icons/android.png);background-size: contain;"></div>
+          </div></a>
+          <a href="#"><div class="appIconHolder">
+            <div class="icon-image" style="background-image:url(icons/apple.png);background-size: contain;"></div>
+          </div></a>
+        </div>
+        <div class="social-icon-holder">
+          <a href="#"><div class="appIconHolder">
+            <div class="icon-image" style="background-image:url(icons/facebook.png);background-size: contain;"></div>
+          </div></a>
+          <a href="#"><div class="appIconHolder">
+            <div class="icon-image" style="background-image:url(icons/twitter.png);background-size: contain;"></div>
+          </div></a>
+          <a href="#"><div class="appIconHolder">
+            <div class="icon-image" style="background-image:url(icons/insta.png);background-size: contain;"></div>
+          </div></a>
+          <a href="#"><div class="appIconHolder">
+            <div class="icon-image" style="background-image:url(icons/youtube.png);background-size: contain;"></div>
+          </div></a>
+          <a href="#"><div class="appIconHolder">
+            <div class="icon-image" style="background-image:url(icons/linkedin.png);background-size: contain;"></div>
+          </div></a>
+        </div>
+        <div class="copy-right-text">
+          © 2021  Nexa CLiQ | All rights reserved
+        </div>
+      </div>
+      </div>
+      <div class="last-text">
+        <h2>NEXA CLiQ: Shop Online with India's most trusted destination. Buy Brands you love at prices you want!</h2>
+        <p>Shop online whenever you want to - yes, that 24x7 experience is so convenient now, isn't it?! Get genuine products from all the Top Brands delivered to your doorstep, with free shipping. Our clean, immersive design allows for easy navigation across categories and brand stores so you can find the best products from a wide range of
+        <a href="#">smartphones</a>,<a href="#">mobile phones</a>,<a href="#">laptop</a>,<a href="#">women's clothing</a>,<a href="#">men's clothing</a>,<a href="#">kids wear</a>,<a href="#">watches</a> and <a href="#">accessories</a> online.
+        You can also check our great offers or deal of the day section and get the best prices on various products across lifestyle, fashion, electronics, appliances & more. With such offerings and NEXA CLiQ exclusive bank offers and NEXA CLiQ coupons, do remeber to buy mobile online, do online electronics shopping and online dress shopping of top Brands at the best prices available throughout the year.
+        </p>
+        <h2>Online Shopping: Fast & convenient with the click of a button</h2>
+        <p>The upside of online shopping at NEXA CLiQ online store, is that you'll save on time and most importantly money with NexaCliq offers. It's as simple as comparing products and prices online before making the right buy. What's more, you also have the option to pay for your favourite brands and products using our easy EMI options. Of course, you can buy and try - in the convenience of your home. Returns are easy too: We'll pick up your returns for free or you can also drop off the goods at the nearest brand store.</p>
+        <h2>Nexa CLiQ Shopping App: Everything you want with just a few clicks on Android & iOS</h2>
+        <p>Shopping on the Nexa CLiQ App is an absolute delight. Download the <a href="#">Nexa CLiQ Android app</a> from the Play Store or the <a href="#">iOS App</a> from Apple App Store and get set to enjoy a range of benefits. Apart from the best deals, amazing offers and the latest styles online, the app also gives you the flexibility to shop at your convenience. Shop during a commute, in the middle of a holiday or at any time you want to. You can also use the easy share options to share your shopping with your friends and family to ensure you're buying something that's perfect. With constant updates and a host of new features being introduced constantly, you also get to enjoy a shopping experience that you'll absolutely love. Download the Nexa CLiQ App today and prepare to rediscover the way you shop.</p>
+        <h2>NEXA CLiQ: Most genuine place for Electronics and Lifestyle Online Shopping, with India's most trusted destination. Buy Brands you love at prices you want!</h2>
+        <p>Shopping for your Lifestyle needs will be made delightfult with NEXA CLiQ. With exclusive Brand store for <a href="#">Westside Online</a> we have most of your trndy shopping needs taken care of. Make NEXA CliQ your online clothes shopping destination and get the best deals on your favorite brands, with the 100% genuine products. Be it gold coins or mobile phones online, you can count on NEXA CliQ for receiving only the most authentic products. Upgrade your lifestyle with shoes online shopping and online clothes shopping only at NEXA CLiQ. Online Shopping for men has never been more easy! Men like to choose Brands and keep their wardrobe upto date with the latest trends. NEXA CLiQ has made the Online shopping expirience amazing for Men. Women's Lifetyle Online shopping needs have been taken care of as well, with the larget assortment of womenwear online</p>
+      </div>
+    </div>
+    
+    <!-- Footer ends  -->
+
+    <script src="./Script/prodPage.js"></script>
+  </body>
+</html>
