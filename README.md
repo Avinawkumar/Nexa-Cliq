@@ -13,5 +13,5 @@ For the frontend, I have used HTML and CSS JavaScript and for the backend I've  
 5.Pagination on Product pages.<br>
 
 <p>To see my Project click this link 👉:
-  <a href="[https://avinawkumar.github.io/](https://nexa-cliq.netlify.app/)https://nexa-cliq.netlify.app/">Deployed-link</a>
+  <a href="https://nexa-cliq.netlify.app/">Deployed-link</a>
 </p>
