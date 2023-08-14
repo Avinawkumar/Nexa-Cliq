@@ -1,33 +1,44 @@
-const express = require('express');
-const mongoose = require('mongoose');
-var cors = require('cors');
+const express=require("express")
+const {connection}=require("./config/db")
+const {users}=require("./routes/user.router")
+const {products}=require("./routes/product.router") 
+const {cart}=require("./routes/cart.router") 
+var cors = require('cors')
 
-const connectedLocalDb = require('./configs/db');
-const userRouter = require('./routes/user.routes');
-const { notesRouter } = require('./routes/note.routes');
-const { authenticate } = require('./middleware/auth.middleware');
-require("dotenv").config() // using .env for port and db
-const app = express();
+
+const app=express()
+app.use(express.json())
 app.use(cors())
-app.use(express.json()); // ==> important;
-
-app.use("/users", userRouter)
-
-app.use(authenticate)
-app.use("/notes", notesRouter )
+require("dotenv").config()
 
 
 
-// exporting the app
-module.exports = app
+app.get("/",(req,res)=>{
+    console.log("welcome")
+    res.send({
+        "msg":"this is response"
+    })
+})
 
-app.listen(process.env.port , async() =>{
-    try {
-        await connectedLocalDb
-        console.log("connected to mongodb");
-    } catch (error) {
-        console.log("not connected to mongodb");
-        console.log(error);
+app.use("/users",users)
+app.use("/products",products)
+app.use("/cart",cart)
+
+
+
+
+   
+
+
+
+app.listen(process.env.port,async()=>{
+    try{
+        await connection
+        console.log("server running")
     }
-    console.log(`Server is running on port ${process.env.port}`);
-});
+    catch(err){
+        console.log(err)
+    }
+      
+  
+})
