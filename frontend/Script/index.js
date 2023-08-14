@@ -402,8 +402,10 @@ window.addEventListener('scroll',function(){
     categoryExpandb.style.display = 'none';
 }
 
-// login signup page
-
+// login signup page start
+////-------------------------------------------------------------base url---------------------------------------------------------------
+var baseUrl = "https://crabby-button-clam.cyclic.app"
+//-------------------------------------------------------------------base url--------------------------------
 const signUpButton = document.getElementById('signUp');
 const signInButton = document.getElementById('signIn');
 const container = document.getElementById('container');
@@ -418,49 +420,44 @@ signInButton.addEventListener('click', () => {
 
 var loginData = localStorage.getItem('loginData');
 if(loginData == null){
-   loginData = []
+//    loginData = []
     //sign up data store starts
 function register(e){
     e.preventDefault()
     let signupform = document.querySelector("#signup-form")
      let name = signupform.name.value;
-     let mail = signupform.mail.value;
+     let email = signupform.mail.value;
      let pass = signupform.pass.value;
-     let a=1;
 
-     let users = {
-        name,
-        mail,
-        pass
+     var userProfile = {
+        name: name,
+        email: email,
+        password: pass,
     }; 
+    fetch(`${baseUrl}/users/register`,{
+        method:"POST",
+        headers:{
+            "Content-type":"application/json"
+        },
+        body:JSON.stringify(userProfile)
+    }).then(res=>res.json())
+    .then((res)=>{
+        if(res.msg=="Already registered"){
+        swal("Already registered", "Please login", "warning")
+        signupform.name.value=""
+        signupform.mail.value=""
+        signupform.pass.value=""
+        container.classList.remove("right-panel-active");
+        }
+        else{
+        swal("Registered", "Please login", "success")
+        signupform.name.value=""
+        signupform.mail.value=""
+        signupform.pass.value=""
+        container.classList.remove("right-panel-active");
+        }
 
-    if(users.name.trim() == '') alert('Enter Your Name');
-    else if(users.mail.indexOf('@')==-1) alert('Enter Your Correct E-mail ID');
-    else if(users.pass == '') alert('Password should not be Empty!')
-    else{   
-     let userData = localStorage.getItem("users")
-     if(userData == null){
-         userData = [];
-        //  userData.push(users);
-     }
-     else{
-         userData = JSON.parse(userData);
-          console.log(userData);
-    }
-        userData.forEach(function(e){
-            if(e.name == users.name && e.mail == users.mail){
-                alert("You are already part of our family")
-                a=0;
-            }
-        });
-        if(a==1) userData.push(users)
-
-     localStorage.setItem('users',JSON.stringify(userData));
-     signupform.name.value=""
-     signupform.mail.value=""
-     signupform.pass.value=""
-     container.classList.remove("right-panel-active");
-    }
+    })
 }
 // sign up data store  ends
  
@@ -471,31 +468,35 @@ function login(e){
     e.preventDefault();
     let loginForm = document.querySelector("#login-form")
     let email = loginForm.email.value;
-    let passw = loginForm.passw.value;
+    let pass = loginForm.passw.value;
 
-    let users = {
-       email,
-       passw
-   }; 
-
-   if(users.email.indexOf('@') == -1) alert('Enter Your Correct E-mail ID');
-   else if(users.passw == '') alert('Password should not be Empty!')
-   else{   
-    let userData = localStorage.getItem('users')
-    if(userData == null){
-        alert("You are not registered!!")
-        loginForm.email.value = ""  
-        loginForm.passw.value = ""  
-        container.classList.add("right-panel-active");
-    }
-    else{
-        userData = JSON.parse(userData);
+    var userdata;
+    let obj={
+        email,password:pass
     }
 
-    for(let i=0 ;i < userData.length ;i++){
-        if(userData[i].mail == users.email && userData[i].pass == users.passw){
+    fetch(`${baseUrl}/users/login`,{
+        method:"POST",
+        headers:{
+            "Content-type":"application/json"
+        },
+        body:JSON.stringify(obj)
+    }).then(res=>res.json())
+    .then((res)=>{
+        if(res.msg=="wrong credentials"){
+            swal("wrong credentials", "Please try again with the correct details", "warning")
+        }
+        else{
+            swal("Login Success", "", "success")
+            userdata=res.data
+        //    username.innerHTML=userdata[0].name
+            // Logout.innerHTML="Logout"
+            localStorage.setItem("token",res.token)
+            // localStorage.setItem("user",JSON.stringify(userdata))
+
             clos();
-            loginData.push(userData[i])
+
+            loginData=userdata
             localStorage.setItem('loginData',JSON.stringify(loginData)) 
             document.querySelector('.sig').style.display = "none"
             document.querySelector('.accounts').style.display = "flex"
@@ -503,13 +504,10 @@ function login(e){
             document.querySelector('.logout').style.display = "flex"
             // document.querySelector('.UserName').textContent = userData[i].name;
             location.reload()
-            
+           
         }
-        else if(i== userData.length-1){
-          alert("Invalid Credentials")
-        }
-    }
- }
+    
+    })
     
       
 }
@@ -539,6 +537,7 @@ else{
 
 function logout(){
     localStorage.removeItem('loginData')
+    localStorage.removeItem("token");
     location.reload()
 }
 

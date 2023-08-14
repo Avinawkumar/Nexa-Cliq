@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping Cart - NEXA CLiQ</title>
+    <link rel="icon" href="cart/unnamed.png" type="png">
+    <link rel="stylesheet" href="CSS/cart.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+      <!--  Navbar starts  -->
+        <div class="nav">
+            <div class="logo">
+                <img src="images/NEXA (3).png" alt="">
+            </div>
+            <div class="accounts">
+                <div class="profile-logo">
+                    <div>
+                    <img src="cart/images/profile.39b59dc38fd3.png" alt="" style="width: 25px;height: 25px;">
+                    </div>
+                    <p class="UserName"></p>
+                    <img src="cart/images/down-arrow-white.7d24202a27ce.svg" alt="">
+                </div>
+            </div>
+        </div>
+      <!--  Navbar Ends  -->
+
+        <!-- <div class="keep">
+            <div class="speech-bubble">
+              <div class="account" onclick="ope()">
+                <img src="icons/profileicon.png" alt="..." style="width: 25px;">My account
+              </div>
+              <div class="account" onclick="ope()">
+                <img src="icons/order-history.a92cd34e19fa.svg" alt="..." style="width: 20px; margin-left: 4px;">Order History
+              </div>
+              <div class="account" onclick="ope()">
+                <img src="icons/whist.svg" alt="..." style="width: 15px; margin-left: 7px;">Saved List
+              </div>
+              <div class="account" onclick="ope()">
+                <img src="icons/alert.89aa376e9ac0.svg" alt="..."style="width: 15px; margin-left:7px ">Alert & Coupon
+              </div>
+              <div class="account" onclick="ope()">
+                <img src="icons/giftCards.c9b393b81026.svg" alt="..." style="width: 20px; margin-left: 1px;">Gift Card
+              </div>
+              <div class="account" onclick="ope()">
+                <img src="icons/cliqCash.89de362374b9.svg" alt="..." style="width: 15px; margin-left: 5px;" >CLiQ Cash
+              </div>
+            </div>
+        </div> -->
+   <!--  nav ends-->
+
+   <div class="nav sec">
+    <div class="logo my">
+       My Bag
+    </div>
+    <div class="accounts">
+        <div class="profile-logo b">
+            Delhi , 110001
+            <input type="text" placeholder="Change PIN Code">
+        </div>
+    </div>
+   </div>
+   <!--my bag ends-->
+
+         
+   <div class="heading">
+    <p>
+      10% off on your first purchase! Use Code: 
+      <strong>NQFIRST10</strong>
+      </p>
+  </div>
+</div>  
+<!-- Nav Bar ends -->
+
+<!-- cart container starts -->
+<div id="cont">
+  <div id="order-container">
+    <!-- here all the card are appended -->
+  </div>
+  <div id="order_summary">
+    <p>Order Summary</p>
+    <p><span>Order Value</span><span id="total-price"></span></p>
+    <p><span>Shipping</span><span id="ship-price">Free</span></p>
+    <hr>
+    <p><span>TOTAL AMOUNT</span><span id="discount-price"></span></p>
+    <div id="coupon-box">
+      <p>Coupon Code</p><input type="text" id="coupon-code">
+    </div>
+    <button id="coupon-submit" style="background-color: #dc215f;">Apply</button>
+    <a href="payment.html"><button id="ckeckout" style="background-color: #dc215f;">checkout</button></a>
+  </div>
+</div>
+
+<!-- cart container ends -->
+
+<!-- Footer -->
+<br />
+
+<hr />
+<br />
+  <!-- footer start  -->
+   <footer>
+     <div class="secure">
+       <div class="card">
+         <img src="images/cart_confidence_callout_1.png" alt="">
+         <img src="images/cash.png" alt="">
+         <img src="images/net.png" alt="">
+       </div>
+       <div class="ssl">
+         <img src="images/slh.png" alt="">
+         <div class="sec-pay">
+           <p class="sec">SSL SECURED PAYMENT</p>
+           <p class="det">Your information is protected by 256-bit SSL encryption</p>
+         </div>
+       </div>
+     </div>
+   </footer>
+ </div>
+
+
+ <script src="Script/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,300 @@
+
+
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15%;
+    grid-gap: 40px;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+  }
+  .container > div {
+    height: 400px;
+    text-align: center;
+  }
+  /* img {
+    width: 290px;
+    height: 320px;
+  } */
+  .text {
+    font-size: 10px;
+  }
+  .btn {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    width: 10%;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 45%;
+  }
+  .cont {
+    /* border: 1px solid red; */
+    height: auto;
+    display: inline-block;
+    display: grid;
+  }
+  .dull {
+    color: gray;
+  }
+  .txt {
+    margin: auto;
+  }
+
+  
+  /* Fixed sidenav, full height */
+  .sidenav {
+    height: 100%;
+    width: 300px;
+    /* position: fixed; */
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 20px;
+    font-family: "Avenir Next Regular";
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a,
+  .dropdown-btn {
+    padding: 14px 14px 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #000;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    font-family: "Avenir Next Demi";
+    font-weight: bold;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover,
+  .dropdown-btn:hover {
+    color: #f1f1f1;
+    background-color: black;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    color: black;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: white;
+    padding-left: 8px;
+    border-top: 1px solid #ccc;
+    font-size: 12px;
+  }
+  
+  
+  /* Some media queries for responsiveness */
+  
+  .clrImg {
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+  }
+  .dropdown-btn a {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .head {
+  margin-left: 20px;
+  }
+  .head .filteritems__count {
+    display: block;
+    color: #888;
+    line-height: 1.5;
+    text-decoration: none;
+    padding: 0 6 px 0 0;
+    font-size: 13px;
+    font-style: italic;
+    margin-bottom: 12 px;
+  }
+  .dropdown-btn:hover {
+    background-color: white;
+    color: black;
+  }
+  hr {
+    margin-left: 20px;
+  }
+  span {
+    padding-right: 20px;
+  }
+  
+  img:hover {
+    border: 1px solid white;
+    /* border-radius: 50%; */
+  }
+  
+  #btn1 {
+    margin-right: 5px;
+    margin-top: 80px;
+    margin-left: -50px;
+    /* transform: translate(-100%, 150%);
+    -ms-transform: translate(-50%, -50%); */
+    background-color: white;
+    color: rgb(58, 49, 49);
+    font-size: 30px;
+    padding: 8px 12px;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    border-radius: 1000%;
+    text-align: center;
+  }
+  
+  #btn1:hover {
+    cursor: default;
+    transform: rotate(180deg);
+    transition: all 1s ease-in-out 0s;
+  }
+  
+  .btn2 {
+    position: absolute;
+    margin-top: auto;
+    margin-left: auto;
+    /* top: 58%;
+    left: 67.5%; */
+    /* transform: translate(-100%, 150%);
+    -ms-transform: translate(-50%, -50%); */
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 1000%;
+    text-align: center;
+  }
+  
+  .btn2:hover {
+    cursor: default;
+    transform: rotate(180deg);
+    transition: all 1s ease-in-out 0s;
+  }
+  
+  #sel {
+    width: 100%;
+    padding: 10px;
+    color: gray;
+  }
+  
+  
+  #upper {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 50px;
+  }
+#upper>div:nth-child(1){
+  margin-left: 50%;
+}
+  #table2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    margin-top: 30px;
+    margin: auto;
+  }
+  .data-list-wrapper {
+    margin-left: 90px;
+    margin-right: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .card-wrapper{
+   margin-top: 10px;
+  }
+  .card-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    /* width: 70%; */
+    margin-left: 40px;
+    justify-content: center;
+    font-family: "Avenir Next Regular";
+  }
+  
+  /* .imagediv{
+    height: 400px;
+    border: 1px solid black;
+  } */
+  .imagediv img{
+    width: 100%;
+  }
+  #product-name{
+    font-size: larger;
+  }
+  .list-buttons{
+    text-align: center;
+  }
+  .add-data{
+    /* background-color: #453832; */
+    background-color: #dc215f;
+    color: #fff;
+    border:none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 28px 28px 28px 28px;
+  }
+  .add-data:hover{
+    cursor: pointer;
+  }
+  #pagination-wrapper{
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #888;
+    text-align: center;
+    padding: 10px;
+  }
+  .pagination-button{
+    margin-right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+  }
+  .pagination-button:hover{
+    color: blue;
+    cursor: pointer;
+  }
+
+  #user:hover{
+    color: blue;
+    cursor: pointer;
+  }
+  #logout:hover{
+    color: blue;
+    cursor: pointer;
+  }
+
+  .price::before{
+    content: "\20B9";
+  }
+
+
+
+
+  /* media query for products */
+
+  @media screen and (min-width:301px) and (max-width:800px) {
+    .card-list{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 10px;
+    }
+  }

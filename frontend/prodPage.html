@@ -7,8 +7,11 @@
     <title>NEXA CLIQ</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="cart/unnamed.png" type="png">
     <link rel="shortcut icon" href="icon.jpg" type="image/jpg" />
     <link rel="stylesheet" href="CSS/prodPage.css" />
+    <link rel="stylesheet" href="CSS/men.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
   <body>
 
@@ -957,7 +960,7 @@
                 <img src="images/home page/whistlistt.svg" alt="">
               </div>
               <div class="cart" >
-                <a href="cart/cart.html">
+                <a href="cart.html">
                   <span class="numb">0</span>
                 <img src="images/home page/cart icon.svg" alt="" style="width: 20px;">
                 </a>
@@ -991,9 +994,9 @@
               <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
             </div>
             <span style="text-decoration: none;">or use your email for registration</span>
-            <input id="name" name="name" type="text" placeholder="Name" />
-            <input id="mail" name="mail" type="email" placeholder="Email" />
-            <input id="pass" name="pass" type="password" placeholder="Password" />
+            <input id="name" name="name" type="text" placeholder="Name" required/>
+            <input id="mail" name="mail" type="email" placeholder="Email" required/>
+            <input id="pass" name="pass" type="password" placeholder="Password" required/>
             <button id="sign-up" onclick="register(event)">Sign Up</button>
           </form>
         </div>
@@ -1007,8 +1010,8 @@
               <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
             </div>
             <span style="text-decoration: none;">or use your account</span>
-            <input id="email" name="email" type="email" placeholder="Email" />
-            <input id="passw" name="passw" type="password" placeholder="Password" />
+            <input id="email" name="email" type="email" placeholder="Email" required/>
+            <input id="passw" name="passw" type="password" placeholder="Password" required/>
             <a href="#">Forgot your password?</a>
             <button onclick="login(event)">Sign In</button>
           </form>
@@ -1061,159 +1064,429 @@
       </div>
     <!-- --------- Nav Bar Ends ------------------->
 
-    <h1>Shirts</h1>
-    <p id="noOfProd"> Products</p>
-    <!-- <p>Home > Footwear > Men</p> -->
-    <ul id="breadcrumbs">
-        <li><a href="index.html">Home</a></li>&nbsp;<div></div>&nbsp;
-        <li><a href="#">Footwear</a></li>&nbsp;<div></div>&nbsp;
-        <li><a href="#">Men</a></li>&nbsp;<div></div>&nbsp;
-        <li>Formal</li>
-    </ul>
-
-    <div id="sorting_changeLayout">
-        <div class="hero">
-            <div class="selector">
-                <div id="selectedField">
-                    <p>Sort By: <span id="selectedText"></span></p>
-                    <img src="https://www.tatacliq.com/src/general/components/img/sortIcon.44a2548639d1.svg" alt="">
-                </div>
-
-                <ul id="lists" class="hideList">
-                    <li class="options">
-                      <p>Popularity</p>
-                    </li>
-                    <li class="options">
-                      <p>Price Low to High</p>
-                    </li>
-                    <li class="options">
-                      <p>Price High to Low</p>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-
-        <div id="changeLayout">
-            <div class="listLayout" id="gridLayout" onclick="changeGridColumn()"></div>
-        </div>
+    <div id="upper">
+      <div> <a href="index.html" style="color: black;">Home</a>/ Mens Wear</div>
+        <div>
+          <select name="select" id="sel">
+          <option value="">Sort By<br> New Arrivals </div></option>
+          <option value="low">Price:Lowest First</option>
+          <option value="high">Price:Highest First</option>
+          </select>
     </div>
+  </div>
+  <div id="table2">
+     <div>
+      <div class="sidenav">
+          <div class="head">
+           FILTER <span class="filteritems__count">1163 items</span>
+          </div>
+          <hr />
+          <button class="dropdown-btn">
+            Gender
+          </button>
+          <div class="dropdown-container">
+            <a href="prodPage.html">Men</a>
+            <a href="prodPage.html">Women</a>
+          </div>
+          <hr />
+          <button class="dropdown-btn">
+            Category
+          </button>
+          <div class="dropdown-container">
+            <a id="mens-jeans">Jeans</a>
+            <a id="mens-tshirt">T-Shirts</a>
+            <a href="#">Boxers</a>
+            <a href="#">Graphic Tees</a>
+            <a href="#">Hoodies</a>
+            <a href="#">Jackets</a>
+            <a href="#">Belts</a>
+            <a href="#">Joggers</a>
+            <a href="#">Mask</a>
+            <a href="#">Polo Shirt</a>
+            <a href="#">Shirts</a>
+            <a href="#">Shoes</a>
+            <a href="#">Socks</a>
+            <a href="#">Sweaters</a>
+            <a href="#">Bottoms</a>
+            <a href="#">Tops</a>
+            <a href="#">UnderWear</a>
+          </div>
+          <hr />
+          <button class="dropdown-btn">
+            Product Type
+          </button>
+          <div class="dropdown-container">
+            <a href="#">1 Polo Shirt</a>
+            <a href="#">3 Pack Short</a>
+            <a href="#">3 Pack Socks</a>
+            <a href="#">5 Pack Masks</a>
+            <a href="#">5 Pack socks</a>
+            <a href="#">Athletic fit jeans</a>
+            <a href="#">Belts</a>
+            <a href="#">Bomber Jackets</a>
+            <a href="#">Bootcut Jeans</a>
+            <a href="#">Boxer Breifs</a>
+            <a href="#">Boxer Shots</a>
+            <a href="#">Boxers</a>
+            <a href="#">Briefs</a>
+            <a href="#">Button Down Shirt</a>
+            <a href="#">Button Up Shirts</a>
+            <a href="#">Chinos</a>
+            <a href="#">Crew Beck T-Shirts</a>
+            <a href="#">Denim Jacket</a>
+            <a href="#">Denim Jpggers</a>
+            <a href="#">Flannel Shirts</a>
+            <a href="#">Denim Shorts</a>
+            <a href="#">Fleece Joggers</a>
+            <a href="#">Flip Flops</a>
+            <a href="#">Henley T-shirts</a>
+            <a href="#">Hooded Shirts</a>
+            <a href="#">Khacki Shorts</a>
+            <a href="#">Crew Beck T-Shirts</a>
+            <a href="#">Graphic Tees</a>
+            <a href="#">Hoodies</a>
+            <a href="#">Jackets</a>
+            <a href="#">Jeans</a>
+            <a href="#">Joggers</a>
+            <a href="#">Mask</a>
+            <a href="#">Polo Shirt</a>
+            <a href="#">Shirts</a>
+            <a href="#">Shoes</a>
+            <a href="#">Socks</a>
+            <a href="#">Sweaters</a>
+            <a href="#">T-Shirts</a>
+          </div>
+          <hr />
+          <button class="dropdown-btn">
+            Fit
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Adjustable Fit</a>
+            <a href="#">Athletic</a>
+            <a href="#">Classic Fit</a>
+            <a href="#">Loose Fit</a>
+            <a href="#">Original Bootcut</a>
+            <a href="#">Original Straight</a>
+            <a href="#">Relaxed Fit</a>
+            <a href="#">Skinny</a>
+            <a href="#">Skinny Fit</a>
+            <a href="#">Slim</a>
+            <a href="#">Slim Fit</a>
+            <a href="#">Slim Straight</a>
+            <a href="#">Standard Fit</a>
+            <a href="#">Super Skinny</a>
+            <a href="#">Ultra Skinny</a>
+          </div>
+          <hr />
+          <button class="dropdown-btn">
+            Sizes
+          </button>
+          <div class="dropdown-container">
+            <a href="#">XS</a>
+            <a href="#">S</a>
+            <a href="#">M</a>
+            <a href="#">L</a>
+            <a href="#">XXL</a>
+            <a href="#">XL</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">26</a>
+          </div>
+          <hr />
+          <button class="dropdown-btn">
+            Color
+          </button>
+          <div class="dropdown-container">
+            <a href="#"
+              ><span
+                ><img
+                  src="https://aeo.imgix.net/img/app/others/img1x1.png"
+                  class="clrImg"
+              /></span>
+              Beige</a
+            >
+            <a href="#"
+              ><span
+                ><img
+                  src="https://aeo.imgix.net/img/app/brands/ae/colorswatch/black.png?w=18&auto=format"
+                  class="clrImg"
+              /></span>
+              black</a
+            >
+            <a href="#"
+              ><span
+                ><img
+                  src="https://aeo.imgix.net/img/app/brands/ae/colorswatch/blue.png?w=18&auto=format"
+                  class="clrImg"
+              /></span>
+              Blue</a
+            >
+            <a href="#"
+              ><span
+                ><img
+                  src="https://aeo.imgix.net/img/app/brands/ae/colorswatch/brown.png?w=18&auto=format"
+                  class="clrImg"
+              /></span>
+              Brown</a
+            >
+            <a href="#"
+              ><span
+                ><img
+                  src="https://aeo.imgix.net/img/app/brands/ae/colorswatch/burgundy.png?w=18&auto=format"
+                  class="clrImg"
+              /></span>
+              Burgundy</a
+            >
+            <a href="#"
+              ><span
+                ><img
+                  src="https://aeo.imgix.net/img/app/brands/ae/colorswatch/cream.png?w=18&auto=format"
+                  class="clrImg"
+              /></span>
+              Cream</a
+            >
+            <a href="#"
+              ><span
+                ><img
+                  src="https://aeo.imgix.net/img/app/brands/ae/colorswatch/green.png?w=18&auto=format"
+                  class="clrImg"
+              /></span>
+              Green</a
+            >
+            <a href="#"
+              ><span
+                ><img
+                  src="https://aeo.imgix.net/img/app/brands/ae/colorswatch/grey.png?w=18&auto=format"
+                  class="clrImg"
+              /></span>
+              Grey</a
+            >
+            <a href="#"
+              ><span
+                ><img
+                  src="https://aeo.imgix.net/img/app/brands/ae/colorswatch/khaki.png?w=18&auto=format"
+                  class="clrImg"
+              /></span>
+              Khaki</a
+            >
+            <a href="#"
+              ><span
+                ><img
+                  src="https://aeo.imgix.net/img/app/brands/ae/colorswatch/maroon.png?w=18&auto=format"
+                  class="clrImg"
+              /></span>
+              Maroon</a
+            >
+            <a href="#"
+              ><span
+                ><img
+                  src="https://aeo.imgix.net/img/app/others/img1x1.png"
+                  class="clrImg"
+              /></span>
+              Multi</a
+            >
+            <a href="#"
+              ><span
+                ><img
+                  src="https://aeo.imgix.net/img/app/brands/ae/colorswatch/multi-colored.png?w=18&auto=format"
+                  class="clrImg"
+              /></span>
+              Multi-Colored</a
+            >
+            <a href="#"
+              ><span
+                ><img
+                  src="https://aeo.imgix.net/img/app/brands/ae/colorswatch/navy.png?w=18&auto=format"
+                  class="clrImg"
+              /></span>
+              Navy</a
+            >
+            <a href="#"
+              ><span
+                ><img
+                  src="https://aeo.imgix.net/img/app/brands/ae/colorswatch/olive.png?w=18&auto=format"
+                  class="clrImg"
+              /></span>
+              Olive</a
+            >
+            <a href="#"
+              ><span
+                ><img
+                  src="https://aeo.imgix.net/img/app/brands/ae/colorswatch/orange.png?w=18&auto=format"
+                  class="clrImg"
+              /></span>
+              Orange</a
+            >
+            <a href="#"
+              ><span
+                ><img
+                  src="https://aeo.imgix.net/img/app/brands/ae/colorswatch/peach.png?w=18&auto=format"
+                  class="clrImg"
+              /></span>
+              Peach</a
+            >
+            <a href="#"
+              ><span
+                ><img
+                  src="https://aeo.imgix.net/img/app/brands/ae/colorswatch/pink.png?w=18&auto=format"
+                  class="clrImg"
+              /></span>
+              Pink</a
+            >
+            <a href="#"
+              ><span
+                ><img
+                  src="https://aeo.imgix.net/img/app/brands/ae/colorswatch/purple.png?w=18&auto=format"
+                  class="clrImg"
+              /></span>
+              Purple</a
+            >
+            <a href="#"
+              ><span
+                ><img
+                  src="https://aeo.imgix.net/img/app/brands/ae/colorswatch/red.png?w=18&auto=format"
+                  class="clrImg"
+              /></span>
+              Red</a
+            >
+            <a href="#"
+              ><span
+                ><img
+                  src="https://aeo.imgix.net/img/app/brands/ae/colorswatch/white.png?w=18&auto=format"
+                  class="clrImg"
+              /></span>
+              white</a
+            >
+            <a href="#"
+              ><span
+                ><img
+                  src="https://aeo.imgix.net/img/app/brands/ae/colorswatch/yellow.png?w=18&auto=format"
+                  class="clrImg"
+              /></span>
+              Yellow</a
+            >
+          </div>
+          <hr />
+          <button class="dropdown-btn">
+            Price
+          </button>
+          <div class="dropdown-container">
+            <a href="#">399 AND BELOW</a>
+            <a href="#">400 TO 599</a>
+            <a href="#">600 TO 999</a>
+            <a href="#">1000 TO 1499</a>
+            <a href="#">1500 TO 2999</a>
+            <a href="#">3000 TO 4499</a>
+            <a href="#">4500 To 6999</a>
+            <a href="#">7500 TO 8999</a>
+          </div>
+          <hr />
+          <button class="dropdown-btn">
+            Discount
+          </button>
+          <div class="dropdown-container">
+            <a href="#">25% and Above</a>
+            <a href="#">30% and Above</a>
+            <a href="#">40% and Above</a>
+            <a href="#">50% and Above</a>
+            <a href="#">60% and Above</a>
+          </div>
+          <hr />
+          <button class="dropdown-btn">
+            Wash
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Black</a>
+            <a href="#">Color wash</a>
+            <a href="#">Dark wash</a>
+            <a href="#">Light wash</a>
+            <a href="#">Medium wash</a>
+            <a href="#">white</a>
+          </div>
+          <hr />
+          <button class="dropdown-btn">
+            Pattern
+          </button>
+          <div class="dropdown-container">
+            <a href="#">1|Checks</a>
+            <a href="#">1|Checks|Elastic</a>
+            <a href="#">1|Checks|Elastic|Flat front</a>
+            <a href="#">1|Colorblock</a>
+            <a href="#">1|Elastic|Flat front</a>
+            <a href="#">1|Elastic|Flat front|Print-Tropical</a>
+            <a href="#">Checks</a>
+            <a href="#">Checks|Elastic</a>
+            <a href="#">Checks|Elastic|Flat front</a>
+            <a href="#">Colorblock</a>
+            <a href="#">Elastic|Flat front|Print-Tropical</a>
+            <a href="#">Floral</a>
+            <a href="#">Printed</a>
+            <a href="#">solid</a>
+            <a href="#">Stripes</a>
+          </div>
+          <hr />
+          <button class="dropdown-btn">
+            Sleeves
+          </button>
+          <div class="dropdown-container">
+            <a href="#">1|Long sleeve</a>
+            <a href="#">1|Short sleeve</a>
+            <a href="#">Half sleeves</a>
+            <a href="#">Long Sleeve</a>
+            <a href="#">Short Sleeve</a>
+          </div>
+          <hr />
+          <button class="dropdown-btn">
+            Neck
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Band</a>
+            <a href="#">Collor</a>
+            <a href="#">Crew Neck</a>
+            <a href="#">Mock Neck</a>
+            <a href="#">Round Neck</a>
+            <a href="#">V-Neck</a>
+          </div>
+          <hr />
+          <button class="dropdown-btn">
+            Stretch
+          </button>
+          <div class="dropdown-container">
+            <a href="#">1|Ne(x)T Level</a>
+            <a href="#">1|Ne(x)T Level</a>
+            <a href="#">AirFlex+</a>
+            <a href="#">Flex</a>
+            <a href="#">Ne(x)T Level</a>
+            <a href="#">No stretch</a>
+            <a href="#">Slight stretch</a>
+          </div>
+          <hr />
+          <button class="dropdown-btn">
+            Destruction
+          </button>
+          <div class="dropdown-container">
+            <a href="#">Clean</a>
+            <a href="#">Ripped</a>
+          </div>
+          <hr />
+        </div>
+     </div>
+     <!-- data append start here -->
+     <div id="dis" class="data-list-wrapper">
+      <!-- All data will be appended here -->
+  </div>
+  </div>
+<div id="pagination-wrapper"></div>
+       <!-- Footer -->
+       <br />
 
-    <div id="footwearPage">
-      <div id="prodFilters_cont">
-        <div id="filterContHeading">
-          <h3>Filters</h3>
-          <span id="filterClear">Clear All</span>
-        </div>
-        <div id="prodFilters">
-          <div>Department
-              <button id="subfilter_depart">Footwear</button>
-          </div>
-          <div>Category
-              <button id="subfilter_cat">Men &nbsp; &#10006;</button>
-          </div>
-          <div>Product Type
-              <button id="subfilter_prodtype">Formal &nbsp; &#10006;</button>
-          </div>
-          <div class="brand_color_collapse expand" onclick="collapse(0)">
-              <div class="filter_name">
-                  <div>Brand</div>
-                  <span class="plus_sign">&#10006;</span>
-              </div>
-              <div class="subfilter_brand">
-                  <div class="count_of_products">
-                      <div>
-                          <label class="radio" for="Arrow">
-                          <input type="checkbox" id="Arrow" name="brand" value="Arrow">
-                          <span class="check"></span>
-                          Arrow</label>
-                      </div>
-                      <strong style="font-size: 16px; color: #c7c7c7; font-weight: 500;">7</strong>
-                  </div>
-                  <div class="count_of_products">
-                      <div>
-                          <label class="radio" for="Ruosh">
-                          <input type="checkbox" id="Ruosh" name="brand" value="Ruosh">
-                          <span class="check"></span>
-                          Ruosh</label>
-                      </div>
-                      <strong style="font-size: 16px; color: #c7c7c7; font-weight: 500;">5</strong>
-                  </div>
-              </div>
-          </div>
-          <div class="brand_color_collapse expand" onclick="collapse(1)">
-              <div class="filter_name">
-                  <div>Colour</div>
-                  <span class="plus_sign">&#10006;</span>
-              </div>
-              <div class="subfilter_brand">
-                      <div>
-                          <label class="radio" for="Black">
-                          <input onclick="black_shoes()" type="checkbox" id="Black" name="color" value="Black">
-                          <span class="check"></span>
-                          Black</label>
-                      </div>
-                      <div>
-                          <label class="radio" for="Brown">
-                          <input type="checkbox" id="Brown" name="color" value="Brown">
-                          <span class="check"></span>
-                          Brown</label>
-                      </div>
-              </div>
-          </div>
-          <div class="filter_name">
-              <div>Price</div>
-              <span class="plus_sign">&#10006;</span>
-          </div>
-          <div class="filter_name">
-              <div>Discount</div>
-              <span class="plus_sign">&#10006;</span>
-          </div>
-          <div class="filter_name">
-              <div>Size</div>
-              <span class="plus_sign">&#10006;</span>
-          </div>
-          <div class="filter_name">
-              <div>Clog/Flip-Flop Type</div>
-              <span class="plus_sign">&#10006;</span>
-          </div>
-          <div class="filter_name">
-              <div>Fastening</div>
-              <span class="plus_sign">&#10006;</span>
-          </div>
-          <div class="filter_name">
-              <div>Sandal Type</div>
-              <span class="plus_sign">&#10006;</span>
-          </div>
-          <div class="filter_name">
-              <div>Shoe/Boot Type</div>
-              <span class="plus_sign">&#10006;</span>
-          </div>
-          <div class="filter_name">
-              <div>Size Type</div>
-              <span class="plus_sign">&#10006;</span>
-          </div>
-          <div class="filter_name">
-              <div>Sole Material</div>
-              <span class="plus_sign">&#10006;</span>
-          </div>
-          <div class="filter_name">
-              <div>Tip Shape</div>
-              <span class="plus_sign">&#10006;</span>
-          </div>
-          <div class="filter_name">
-              <div>All Discount</div>
-              <span class="plus_sign">&#10006;</span>
-          </div>
-          <div class="filter_name">
-              <div>Availability</div>
-              <span class="plus_sign">&#10006;</span>
-          </div>
-        </div>
-    </div>
-      <div id="products_footwear"></div>
+       <!-- <hr /> -->
+       <br />
+    
+      
 </div>
 
+<!-- footer start from here -->
  <div class="footer">
      <div class="containers">
       <div class="trust-section">
@@ -1308,7 +1581,7 @@
           </div></a>
         </div>
         <div class="copy-right-text">
-          © 2021  Nexa CLiQ | All rights reserved
+          © 2023  Nexa CLiQ | All rights reserved
         </div>
       </div>
       </div>
@@ -1329,6 +1602,8 @@
     
     <!-- Footer ends  -->
 
-    <script src="./Script/prodPage.js"></script>
+    <!-- <script src="./Script/prodPage.js"></script> -->
+    <script src="././Script/prodPage.js"></script>
+    <script src="././Script/men.js"></script>
   </body>
 </html>
