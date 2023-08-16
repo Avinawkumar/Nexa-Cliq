@@ -7,13 +7,13 @@ For the frontend, I have used HTML and CSS JavaScript and for the backend I've  
 
 # Screen Shots
 <p>Home Page</p>
-<img src="https://ibb.co/L15KDff/nexacliq1.png">
-<img src="https://ibb.co/FWG7k5m/nexacliq2.png">
+<img src="./frontend/images/nexacliq1.png">
+<img src="./frontend/images/nexacliq2.png">
 <p>Product Page</p>
-<img src="https://ibb.co/sjxssF9">
-<img src="https://ibb.co/PNWBCV9">
+<img src="./frontend/images/nexacliq3.png">
+<img src="./frontend/images/nexacliq4.png">
 <p>Cart Page</p>
-<img src="https://ibb.co/HFMyzvn">
+<img src="./frontend/images/nexacliq5.png">
 
 # Key Features (Users side)
 1.Login/Signup.<br>
