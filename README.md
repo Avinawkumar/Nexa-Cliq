@@ -7,8 +7,8 @@ For the frontend, I have used HTML and CSS JavaScript and for the backend I've  
 
 # Screen Shots
 <p>Home Page</p>
-<img src="https://ibb.co/L15KDff">
-<img src="https://ibb.co/FWG7k5m">
+<img src="https://ibb.co/L15KDff/nexacliq1.png">
+<img src="https://ibb.co/FWG7k5m/nexacliq2.png">
 <p>Product Page</p>
 <img src="https://ibb.co/sjxssF9">
 <img src="https://ibb.co/PNWBCV9">
