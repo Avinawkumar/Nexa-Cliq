@@ -1,4 +1,4 @@
-var baseUrl = "https://blue-coypu-gear.cyclic.app"
+var baseUrl = "https://nexa-cliq-backend.onrender.com"
 var popup = document.querySelector(".popup");
 var close = document.querySelector(".close");
 
