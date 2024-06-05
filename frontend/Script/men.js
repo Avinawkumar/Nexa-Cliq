@@ -1,4 +1,4 @@
-var baseUrl = "https://crabby-button-clam.cyclic.app"
+var baseUrl = "https://nexa-cliq-backend.onrender.com"
 let paginationWrapper = document.getElementById("pagination-wrapper")
 // Dropdown Filter menubar
 var dropdown = document.getElementsByClassName("dropdown-btn");
