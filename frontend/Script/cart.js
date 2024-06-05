@@ -29,7 +29,7 @@ document.querySelector(".UserName").textContent = loggedIn[0].name;
 var arr
 
 //------------------------------------------------------------------------------base url------------------------------------------------------------
-var baseUrl = "https://crabby-button-clam.cyclic.app"
+var baseUrl = "https://nexa-cliq-backend.onrender.com"
 // -------------------------------------------------------------------------------------------------------------------------------------
 let cont=document.getElementById("order-container")
 let totalbill=document.querySelector("#total-price")
