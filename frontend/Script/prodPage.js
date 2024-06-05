@@ -141,7 +141,7 @@ function hideb(a) {
 
 // login signup page
 ///---------------------------------------------------base url------------------------------------------------------------------------;;
-var baseUrl = "https://crabby-button-clam.cyclic.app"
+var baseUrl = "https://nexa-cliq-backend.onrender.com"
 ///-----------------------------------------------base url--------------------------------------------------------------------------------------;
 const signUpButton = document.getElementById("signUp");
 const signInButton = document.getElementById("signIn");
